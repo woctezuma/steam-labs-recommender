@@ -109,6 +109,7 @@ Focusing on recent releases (max 2-3 years) alleviates this issue.
 
 Looking for "popular" games makes sense for new Steam users.
 However, for long-time users, you likely know about the surfaced "popular" games, and discarded them for good reasons.
+Looking for more "niche" games increases the chance to discover a game which you might want to purchase and play.
 
 ![Optimal popularity slider position](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_popularity_slider.png) ![Optimal popularity slider value](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_popularity_slider_value.png)
 
