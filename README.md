@@ -94,7 +94,24 @@ All you need is the id for the tag of interest in the HTML page of the "Interact
 Caveat: if nothing appears, then do not forget to move the sliders.
 Indeed, you might have a recommendation in one of the other pre-computed rankings, and due to ranking interpolation, you
 would have to fiddle with the sliders for a new game to pop in.
- 
+
+## Pieces of advice
+
+-   The recommender might be biased by game bundles.
+
+The recommender might be biased by game bundles.
+Indeed, a few games could get recommended solely because they appeared in many bundles along with games which you own.
+Focusing on recent releases (max 2-3 years) alleviates this issue.
+
+![Optimal release recency slider position](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_release_recency_slider.png) ![Optimal release recency slider value](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_release_recency_slider_value.png)
+
+-   Setting the slider to "popular" is mostly useful for new Steam users.
+
+Looking for "popular" games makes sense for new Steam users.
+However, for long-time users, you likely know about the surfaced "popular" games, and discarded them for good reasons.
+
+![Optimal popularity slider position](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_popularity_slider.png) ![Optimal popularity slider value](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_popularity_slider_value.png)
+
 ## References
 
 -   Posts on ResetERA to figure out the meaning of:
