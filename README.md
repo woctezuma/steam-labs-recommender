@@ -45,5 +45,5 @@ TODO:
 [codecov-image]: <https://codecov.io/gh/woctezuma/steam-labs-recommender/branch/master/graph/badge.svg>
 
 [codacy]: <https://www.codacy.com/app/woctezuma/steam-labs-recommender>
-[codacy-image]: <https://api.codacy.com/project/badge/Grade/TODO>
+[codacy-image]: <https://api.codacy.com/project/badge/Grade/34f2fd74cb344d79ae4a6d51746ec987>
 
