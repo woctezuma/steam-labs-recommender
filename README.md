@@ -109,7 +109,8 @@ Looking for more "niche" games increases the chance to discover a game which you
 
 The recommender might be biased by game bundles.
 Indeed, a few games could get recommended solely because they appeared in a bundle along with games which you own.
-Focusing on recent releases (max 2-3 years) alleviates this issue.
+Focusing on recent releases (max 2-3 years) should alleviate this issue, because recent games are less likely to
+have been featured in many bundles.
 
 ![Optimal release recency slider position](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_release_recency_slider.png) ![Optimal release recency slider value](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_release_recency_slider_value.png)
 
