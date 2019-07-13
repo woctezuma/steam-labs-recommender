@@ -100,7 +100,8 @@ would have to fiddle with the sliders for a new game to pop in.
     - [the variables](https://www.resetera.com/threads/pc-gaming-era-july-2019-life-liberty-and-the-pursuit-of-richaaaaaaard.126544/page-31#post-22706382),
     - [some interpolation javascript code](https://www.resetera.com/threads/pc-gaming-era-july-2019-life-liberty-and-the-pursuit-of-richaaaaaaard.126544/page-31#post-22707917),
 -   Explanations regarding the interpolation of rankings: [here](https://www.resetera.com/threads/pc-gaming-era-july-2019-life-liberty-and-the-pursuit-of-richaaaaaaard.126544/page-31#post-22709362) and [there](https://www.resetera.com/threads/pc-gaming-era-july-2019-life-liberty-and-the-pursuit-of-richaaaaaaard.126544/page-31#post-22709744),
--   [A tweak](https://www.resetera.com/threads/pc-gaming-era-july-2019-life-liberty-and-the-pursuit-of-richaaaaaaard.126544/page-31#post-22710041) to filter any of the 337 tags with the current Interactive Recommender.
+-   [A tweak](https://www.resetera.com/threads/pc-gaming-era-july-2019-life-liberty-and-the-pursuit-of-richaaaaaaard.126544/page-31#post-22710041) to filter any of the 337 tags with the current Interactive Recommender,
+-   [An article on PC Gamer](http://www.pcgamer.com/this-algorithm-picks-out-steams-best-hidden-gems/) which provides nice insights regarding my approach to [discover hidden gems](https://github.com/woctezuma/hidden-gems).
 
 <!-- Definitions -->
 
