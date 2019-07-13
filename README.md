@@ -62,7 +62,7 @@ TODO:
 There are 30 different pre-computed recommendation rankings of 200 games (`algorithm_options`) for the combinations of:
 -   5 popularity biases,
 -   6 release recency biases.
-The slider combinations of the "Interactive Recommender" results in [an interpolation](https://github.com/woctezuma/steam-labs-recommender/wiki/Interpolation.md) of the 4 closest rankings:
+The slider combinations of the "Interactive Recommender" results in [an interpolation](https://github.com/woctezuma/steam-labs-recommender/wiki/Interpolation) of the 4 closest rankings:
 It is a nice trick to allow people to play with the sliders:
 -   without giving too much information away, especially the formula and the popularity values for each game,
 -   without overloading the browser with data. There are 30 rankings instead of 101x101.
