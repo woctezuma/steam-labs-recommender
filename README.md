@@ -18,7 +18,8 @@ The input is:
 -   the user's 50 most played games, along with [normalized](https://steamcommunity.com/groups/SteamLabs/discussions/3/1643168364649465639/) playtime, last play date, counter of the last played games,
 -   minimal external information about the game ([the release date](https://steamcommunity.com/games/593110/announcements/detail/1612767708821405787)).
 
-NB: It is not known whether the input is really limited to the 50 most played games. It is possible that the whole game library is actually taken into account, and that the 50 most played games only appear on the Recommender webpage for cosmetic purposes.
+NB: It is not known whether the input is really limited to the 50 most played games.
+It is [possible](https://metacouncil.com/threads/metasteam-july-2019-racing-towards-empty-wallets.1278/page-34#post-66967) that the whole game library is actually taken into account, and that the 50 most played games only appear on the Recommender webpage for cosmetic purposes.
 
 A neural network predicts the probability that a game is the next purchase of this user, based on the data available for
 millions of other users.
