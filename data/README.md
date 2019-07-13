@@ -6,7 +6,7 @@ This repository contains data personalized to my Steam profile.
 
 The data can be found on the [Interactive Recommender](https://store.steampowered.com/recommender/) page.
 It is at the top of the HTML code of the page.
-I have copied each of the four variables in different .json files.
+I have copied each of the four variables into different .json files.
 
 ![Data source](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data.png)
 
@@ -37,7 +37,7 @@ window.gAppInfo = {
 };
 ```
 
--   `gInputApps.json` contains a list of info about my 50 most played Steam games, which is the input to the algorithm:
+-   `gInputApps.json` contains a list of info about my 50 most played Steam games, which is the algorithm input:
     - n: counter of the last played games ; the most recently played game is assigned 0, the previous one 1, etc.
     - a: app id,
     - p: playtime (in hours),
@@ -61,7 +61,7 @@ window.gInputApps = [
 ];
 ```
 
--   `gRecommendations.json` contains a list of info about 30 recommendation rankings, which is the algorithm output:
+-   `gRecommendations.json` contains a list of 30 recommendation rankings, which is the algorithm output:
     - setting "algorithm_variant", currently useless (as it is always set to 0), to switch between recommender versions,
     - "popularity" bias, which takes one of 5 values (-1/3, 0, 1/3, 2/3 and 1),
     - "release recency" bias, which takes one of 6 values (120, 60, 36, 24, 12, and 6 months),

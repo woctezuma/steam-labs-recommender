@@ -33,7 +33,7 @@ Regarding [popularity](https://steamcommunity.com/groups/SteamLabs/discussions/3
 The tweaked output are then scaled, so that the top recommendation is always assigned the score of 1000. The scale is stored.
 > tweaked_output = score_scale * score
 
-Sorting the scores provide a ranking of game recommendations personalized to the user's data.
+Sorting the scores results in a ranking of game recommendations personalized to the user's data.
 
 ## Data
 
@@ -59,17 +59,20 @@ TODO:
 
 ### Interpolation
 
-There are 30 different pre-computed recommendation rankings of 200 games (`algorithm_options`) for the combinations of:
+There are 30 pre-computed recommendation rankings of 200 games (`algorithm_options`) for the combinations of:
 -   5 popularity biases,
 -   6 release recency biases.
-The slider combinations of the "Interactive Recommender" results in [an interpolation](https://github.com/woctezuma/steam-labs-recommender/wiki/Interpolation) of the 4 closest rankings:
+
+A combination of sliders of the "Interactive Recommender" leads to [an interpolation](https://github.com/woctezuma/steam-labs-recommender/wiki/Interpolation) of the 4 closest rankings:
+
 It is a nice trick to allow people to play with the sliders:
--   without giving too much information away, especially the formula and the popularity values for each game,
+-   without giving too much information away, especially the formula and the "popularity" values for each game,
 -   without overloading the browser with data. There are 30 rankings instead of 101x101.
  
 ### Misleading sliders
 
 Due to ranking interpolation, sliders can be misleading.
+
 For instance, the recommendations for the past 10 years do NOT include the recommendations for the past 6 months.
 
 ![Slider for release recency](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/release_recency_slider.png)
@@ -77,6 +80,7 @@ For instance, the recommendations for the past 10 years do NOT include the recom
 ### How to filter rankings with any tag
 
 In order not to overwhelm people with [337 tags](https://gist.github.com/woctezuma/f80d1beec6a26fbb92eb16927c682dc7), most tags are not displayed in the drop-down menu.
+
 However, you can manually add them, and the "Interactive Recommender" will work perfectly fine with them!
 All you need is the id for the tag of interest in the HTML page of the "Interactive Recommender". For instance:
 
@@ -84,8 +88,9 @@ All you need is the id for the tag of interest in the HTML page of the "Interact
 
 ![Output filtered by tag](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/tag_output.png)
  
-Caveat: if nothing appears, then do not forget to move the sliders. You might have a recommendation in one of the other
-pre-computed rankings. Due to ranking interpolation, you may have to fiddle with the sliders for a new game to pop in.
+Caveat: if nothing appears, then do not forget to move the sliders.
+Indeed, you might have a recommendation in one of the other pre-computed rankings, and due to ranking interpolation, you
+would have to fiddle with the sliders for a new game to pop in.
  
 ## References
 
@@ -109,4 +114,3 @@ pre-computed rankings. Due to ranking interpolation, you may have to fiddle with
 
 [codacy]: <https://www.codacy.com/app/woctezuma/steam-labs-recommender>
 [codacy-image]: <https://api.codacy.com/project/badge/Grade/34f2fd74cb344d79ae4a6d51746ec987>
-
