@@ -108,10 +108,17 @@ Looking for more "niche" games increases the chance to discover a game which you
 -   The recommender might be biased by game bundles.
 
 The recommender might be biased by game bundles.
-Indeed, a few games could get recommended solely because they appeared in many bundles along with games which you own.
+Indeed, a few games could get recommended solely because they appeared in a bundle along with games which you own.
 Focusing on recent releases (max 2-3 years) alleviates this issue.
 
 ![Optimal release recency slider position](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_release_recency_slider.png) ![Optimal release recency slider value](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/optimal_release_recency_slider_value.png)
+
+For instance, I suspect that the game "Steel Rats" is recommended to me because it was featured in a Humble Monthly
+bundle along with two games (MINIT and Dandara) which I have purchased with [Group Buys](https://steamcommunity.com/groups/groupbuys/) and then played.
+That being said, I might be overestimating the impact of this issue, which may be toned down if the Recommender really
+only considers my 50 most played games, which do not include any of these two games.
+
+![Humble Monthly Bundle](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/monthly.png)
 
 ## References
 
