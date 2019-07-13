@@ -71,11 +71,13 @@ It is a nice trick to allow people to play with the sliders:
  
 ### Misleading sliders
 
-Due to ranking interpolation, sliders can be misleading.
+Sliders can be misleading, especially if you filter rare tags.
 
-For instance, the recommendations for the past 10 years do NOT include the recommendations for the past 6 months.
+For instance, recommendations for the past 10 years do NOT necessarily include recommendations for the past 6 months.
 
 ![Slider for release recency](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/release_recency_slider.png)
+
+This is a consequence of cutting the pre-computed rankings after 200 entries, and then interpolating rankings.
 
 ### How to filter rankings with any tag
 
