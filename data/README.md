@@ -17,6 +17,7 @@ I have copied each of the four variables into different .json files.
     - r: release date (in Unix time),
     - t: tags associated with the app,
     - o: whether the app is owned by the user,
+    - w: whether the app is "wishlisted" by the user,
     - i: whether the app is marked as "ignored" by the user.
 
 ```javascript
