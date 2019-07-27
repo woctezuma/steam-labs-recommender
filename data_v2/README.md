@@ -17,10 +17,10 @@ https://store.steampowered.com/recommender/STEAM_ID/results?sessionid=SESSION_ID
 ```
 
 You can notice parameters other than `sessionid` and `steamid`:
--   `include_played` (0),
--   `algorithm` (0),
--   `reinference` (0),
--   `model_version` (0).
+-   `include_played` (`0`),
+-   `algorithm` (`0`),
+-   `reinference` (`0`),
+-   `model_version` (`0`).
 
 ## Variables
 
