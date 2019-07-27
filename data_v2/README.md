@@ -21,7 +21,7 @@ You can notice parameters other than `sessionid` and `steamid`:
 -   `algorithm` (`0`),
 -   `reinference` (`0`),
 -   `model_version` (`0`),
--   (optional) `ignored` (a list of ignored appIDs, e.g. `364470,440`),
+-   (optional) `ignored` (a list of ignored input appIDs, e.g. `364470,440`),
 
 ![Query parameters with ignore feature toggled ON](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/ignore_feature_query_parameters.png)
 
