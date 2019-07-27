@@ -5,6 +5,7 @@ This repository contains data personalized to my Steam profile.
 ## Source
 
 The data can be found on the [Interactive Recommender](https://store.steampowered.com/recommender/) page.
+
 After the update on July 27, 2019, the data is obtained via two GET queries:
 -   to retrieve `inputs.json`:
 ```
