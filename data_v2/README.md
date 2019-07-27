@@ -16,6 +16,12 @@ https://store.steampowered.com/recommender/STEAM_ID/inputs?sessionid=SESSION_ID&
 https://store.steampowered.com/recommender/STEAM_ID/results?sessionid=SESSION_ID&steamid=STEAM_ID&include_played=0&algorithm=0&reinference=0&model_version=0
 ```
 
+You can notice parameters other than `sessionid` and `steamid`:
+-   `include_played` (0),
+-   `algorithm` (0),
+-   `reinference` (0),
+-   `model_version` (0).
+
 ## Variables
 
 -   `inputs.json` contains the equivalent of `gInputApps.json`:
