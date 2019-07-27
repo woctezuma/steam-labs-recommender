@@ -72,7 +72,11 @@ If a game appears in a ranking but not in the 3 others, its score is set to 0 fo
 It is a nice trick to allow people to play with the sliders:
 -   without giving too much information away, especially the formula and the "popularity" values for each game,
 -   without overloading the browser with data. There are 30 rankings instead of 101x101.
- 
+
+Moreover, it is important to notice that the interpolation is bilinear, which is consistent with the linear formula
+mentioned above for `tweaked_output` with respect to the popularity bias.
+However, with respect to the release recency bias, it might be a hack ; further investigations would be required to figure it out.
+
 ### Misleading sliders
 
 Sliders can be misleading, especially if you filter rare tags.
