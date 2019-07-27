@@ -23,6 +23,8 @@ https://store.steampowered.com/recommender/STEAM_ID/results?sessionid=SESSION_ID
 
 ![Inputs](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v2_inputs.png)
 
+![Ignore feature](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/ignore_feature.png)
+
 -   `results.json` contains the equivalent of:
     - `gAppInfo.json` in `app_info`,
     - `gRecommendations.json` in `recommendations`,
