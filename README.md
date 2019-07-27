@@ -128,6 +128,33 @@ only considers my 50 most played games, which do not include any of these two ga
 
 ![Humble Monthly Bundle](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/monthly.png)
 
+## Extent of the input data
+
+On April 27, 2019, Valve shipped an update which allows to exclude games from the input data.
+This allows us to figure out whether the input data is limited to the top 50 games, or if it is larger, potentially
+up to the whole user library.
+
+I have tried the recommender with a smurf account which has:
+-   three games (Dota2, Chivarly, Mirage),
+-   non-zero playtime only for Dota2.
+
+As a first observation, the list shown on the left of the recommender only includes Dota2.
+This confirms that, at least cosmetically, owned games with zero playtime are ignored.
+
+Second, if Dota2 is manually excluded from the input data, then there is no recommendation at all.
+This shows that:
+-   there is no default recommendation,
+-   games with zero playtime are effectively ignored.
+
+![Void response if the input is empty](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/void_response.png)
+
+Now, if I go back to my main account, and manually exclude all of the top 50 games from the input data,
+there are still recommended games.
+This implies that the input data is not empty, and thus a bigger part of my library had to be taken into account.
+
+In conclusion, the recommender is fed more than your top 50 games, likely your whole library data
+(with positive playtime), including all of these idled games.
+
 ## References
 
 -   Posts on ResetERA to figure out the meaning of:
