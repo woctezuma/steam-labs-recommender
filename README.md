@@ -40,7 +40,7 @@ Sorting the scores results in a ranking of game recommendations personalized to 
 
 ## Data
 
-Data personalized to my Steam profile is available in the [`data/`](data/) folder.
+Data personalized to my Steam profile is available in the [`data/`](data/) and [`data_v2/`](data_v2/) folders.
 
 ## Requirements
 
