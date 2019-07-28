@@ -6,6 +6,8 @@
 [![Code coverage][codecov-image]][codecov]
 [![Code Quality][codacy-image]][codacy]
 
+> Disclaimer: The Travis build fails because I cannot publicly share my own cookie values in `personal_info.json`.
+
 ![Interactive Recommender](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/banner.png)
 
 This repository contains Python code to tweak the [Interactive Recommender](https://store.steampowered.com/recommender/) of [Steam Labs](https://store.steampowered.com/labs).
