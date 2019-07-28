@@ -65,7 +65,7 @@ Otherwise, this process can be automated after providing the following personal 
 ```json
 {
   "sessionid": "PASTE_YOUR_COOKIE_VALUE_HERE",
-  "steamLoginSecure": "PASTE_YOUR_COOKIE_VALUE_HERE",
+  "steamLoginSecure": "PASTE_YOUR_COOKIE_VALUE_HERE"
 }
 ```
 
