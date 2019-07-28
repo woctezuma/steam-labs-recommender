@@ -49,9 +49,43 @@ def load_input_app_ids():
     return input_app_ids
 
 
-def main():
-    data = update_inputs()
-    data = update_results()
+def load_app_info():
+    data = load_results()
+
+    app_info = data['app_info']
+
+    return app_info
+
+
+def load_recommendations():
+    data = load_results()
+
+    recommendations = data['recommendations']
+
+    return recommendations
+
+
+def load_tags():
+    data = load_results()
+
+    tags = data['tags']
+
+    return tags
+
+
+def main(update_json_data=False):
+    if update_json_data:
+        data = update_inputs()
+        data = update_results()
+
+    inputs = load_inputs()
+    results = load_results()
+    input_app_ids = load_input_app_ids()
+    app_info = load_app_info()
+    recommendations = load_recommendations()
+    tags = load_tags()
+
+    print('#tags = {}'.format(len(tags)))
 
     return
 
