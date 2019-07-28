@@ -53,6 +53,24 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Download the inputs and results of the recommender
+
+You could manually download the inputs and results of the recommender to `data_v2/`.
+Otherwise, this process can be automated after providing the following personal information:
+
+1. Fill-in your SteamID in the function `get_steam_id()` found in `utils.py`.
+
+2. Fill-in your cookie information in a new file called `personal_info.json`:
+
+```json
+{
+  "sessionid": "PASTE_YOUR_COOKIE_VALUE_HERE",
+  "steamLoginSecure": "PASTE_YOUR_COOKIE_VALUE_HERE",
+}
+```
+
+### TODO
+
 TODO:
 -   average ranking,
 -   reverse-engineer the formula,
