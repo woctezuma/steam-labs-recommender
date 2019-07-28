@@ -48,6 +48,7 @@ def download_recommender_results(ignored_app_ids=None):
         jar = dict(response.cookies)
         update_and_save_cookie_to_disk_if_values_changed(cookies, jar)
     else:
+        print('Download of results failed with status code {}.'.format(response.status_code))
         result = None
 
     return result
