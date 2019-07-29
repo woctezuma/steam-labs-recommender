@@ -51,7 +51,7 @@ def get_release_recency(app_id,
 
     if verbose:
         app_name = app_info[str(app_id)]['n']
-        print('{} ({}): {}'.format(app_name, app_id, release_recency))
+        print('{} ({}): {} seconds between release date and reference date.'.format(app_name, app_id, release_recency))
 
     return release_recency
 
