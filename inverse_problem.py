@@ -1,20 +1,28 @@
 from file_utils import load_recommendations
 
 
-def aggregate_recommendations(verbose=True):
-    recommendations = load_recommendations()
+def get_popularity_bias_denominator():
+    popularity_bias_denominator = 3
+
+    return popularity_bias_denominator
+
+
+def aggregate_recommendations(recommendations=None,
+                              verbose=False):
+    if recommendations is None:
+        recommendations = load_recommendations()
 
     aggregated_recommendations = dict()
 
-    denominator = 3
-
     for ranking in recommendations:
+        settings = ranking['algorithm_options']
 
-        popularity_bias = int(denominator * float(ranking['algorithm_options']['popularity_bias']))
-        release_recency_bias = int(ranking['algorithm_options']['release_recency_bias'])
+        popularity_bias = int(get_popularity_bias_denominator() * float(settings['popularity_bias']))
+        release_recency_bias = int(settings['release_recency_bias'])
+        score_scale = float(ranking['score_scale'])
 
         for (app_id, score) in zip(ranking['app_ids'], ranking['scores']):
-            tweaked_output = float(ranking['score_scale']) * float(score)
+            tweaked_output = score_scale * score
 
             current_data = dict(pb=popularity_bias,
                                 rb=release_recency_bias,
@@ -30,7 +38,7 @@ def aggregate_recommendations(verbose=True):
             aggregated_recommendations[str(app_id)] = aggregated_data
 
     if verbose:
-        print(aggregated_recommendations)
+        print('#recommended apIDs = {}'.format(len(aggregated_recommendations)))
 
     return aggregated_recommendations
 
