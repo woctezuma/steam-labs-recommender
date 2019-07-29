@@ -25,12 +25,14 @@ A neural network predicts the probability that a game is the next purchase of th
 millions of other users.
 
 The output of the neural network is transformed with an unknown formula to give more or less importance to:
--   popularity,
+-   [popularity](https://steamcommunity.com/groups/SteamLabs/discussions/3/1643168364649665178/),
 -   release recency.
 
-It is likely that the release recency is simply used with a threshold to filter out older games.
+The most basic assumption for this formula would be such as:
+> tweaked_output = neural_network_output + popularity_bias * popularity + release_recency_bias * release_recency
 
-Regarding [popularity](https://steamcommunity.com/groups/SteamLabs/discussions/3/1643168364649665178/), the formula could be: 
+It is likely that the release recency is simply used with a threshold to filter out older games.
+In this case, the suggested formula would be instead: 
 > tweaked_output = neural_network_output + popularity_bias * popularity
 
 The tweaked output are then scaled, so that the top recommendation is always assigned the score of 1000. The scale is stored.
