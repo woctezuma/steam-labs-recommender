@@ -5,6 +5,7 @@ import download_results
 import file_utils
 import inverse_problem
 import personal_info
+import release_recency
 import utils
 
 
@@ -123,6 +124,24 @@ class TestInverseProblemMethods(unittest.TestCase):
     def test_aggregate_recommendations(self):
         aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=True)
         self.assertGreater(len(aggregated_recommendations), 0)
+
+
+class TestReleaseRecencyMethods(unittest.TestCase):
+
+    def test_get_unix_time_stamp(self):
+        unix_time_stamp_as_int = release_recency.get_unix_time_stamp()
+        self.assertGreater(unix_time_stamp_as_int, 0)
+
+    def test_convert_str_to_unix_time_stamp(self):
+        unix_time_stamp_as_int = release_recency.convert_str_to_unix_time_stamp(date_as_str='2019-07-28',
+                                                                                date_format='%Y-%m-%d')
+        self.assertGreater(unix_time_stamp_as_int, 0)
+
+    def test_get_release_recency(self):
+        delta_time_stamp = release_recency.get_release_recency(app_id=49520,  # Borderlands 2
+                                                               reference_date='2019-07-28',
+                                                               verbose=True)
+        self.assertGreater(delta_time_stamp, 0)
 
 
 if __name__ == '__main__':
