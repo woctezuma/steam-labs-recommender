@@ -3,6 +3,7 @@ import unittest
 import download_inputs
 import download_results
 import file_utils
+import inverse_problem
 import personal_info
 import utils
 
@@ -111,6 +112,17 @@ class TestFileUtilsMethods(unittest.TestCase):
     def test_load_tags(self):
         data = file_utils.load_tags()
         self.assertGreater(len(data), 0)
+
+
+class TestInverseProblemMethods(unittest.TestCase):
+
+    def test_get_popularity_bias_denominator(self):
+        popularity_bias_denominator = inverse_problem.get_popularity_bias_denominator()
+        self.assertEqual(popularity_bias_denominator, 3)
+
+    def test_aggregate_recommendations(self):
+        aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=True)
+        self.assertGreater(len(aggregated_recommendations), 0)
 
 
 if __name__ == '__main__':
