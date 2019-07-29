@@ -35,7 +35,7 @@ It is likely that the release recency is simply used with a threshold to filter 
 In this case, the suggested formula would be instead: 
 > tweaked_output = neural_network_output + popularity_bias * popularity
 
-The tweaked output are then scaled, so that the top recommendation is always assigned the score of 1000. The scale is stored.
+The tweaked outputs are then scaled, so that the top recommendation is always assigned the score of 1000. The scale is stored.
 > tweaked_output = score_scale * score
 
 Sorting the scores results in a ranking of game recommendations personalized to the user's data.
