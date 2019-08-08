@@ -88,7 +88,7 @@ def load_recommendations():
     return recommendations
 
 
-def main(update_json_data=False):
+def main(update_json_data=True):
     if update_json_data:
         data = update_tags()
         data = update_inputs()
