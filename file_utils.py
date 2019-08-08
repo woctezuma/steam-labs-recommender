@@ -88,14 +88,6 @@ def load_recommendations():
     return recommendations
 
 
-def load_tags():
-    data = load_results()
-
-    tags = data['tags']
-
-    return tags
-
-
 def main(update_json_data=False):
     if update_json_data:
         data = update_tags()
