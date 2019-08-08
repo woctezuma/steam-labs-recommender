@@ -53,6 +53,17 @@ def update_results(ignored_app_ids=None):
     return data
 
 
+def update_tags():
+    data = download_recommender_tags()
+
+    if data is not None:
+        print('Saving tags to disk.')
+        with open(get_tag_file_name(), 'w') as f:
+            json.dump(data, f)
+
+    return data
+
+
 def load_input_app_ids():
     data = load_inputs()
 
@@ -87,6 +98,7 @@ def load_tags():
 
 def main(update_json_data=False):
     if update_json_data:
+        data = update_tags()
         data = update_inputs()
         data = update_results()
 
