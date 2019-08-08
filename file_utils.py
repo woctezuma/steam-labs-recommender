@@ -13,9 +13,20 @@ def load_json_from_disk(file_name):
     return data
 
 
+def load_inputs():
+    data = load_json_from_disk(get_input_file_name())
+
+    return data
+
+
 def load_results():
-    with open(get_result_file_name(), 'r') as f:
-        data = json.load(f)
+    data = load_json_from_disk(get_result_file_name())
+
+    return data
+
+
+def load_tags():
+    data = load_json_from_disk(get_tag_file_name())
 
     return data
 
