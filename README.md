@@ -74,6 +74,12 @@ Otherwise, this process can be automated after providing the following personal 
 }
 ```
 
+Afterwards, run the following script to download the data:
+
+```bash
+python file_utils.py
+```
+
 ### TODO
 
 TODO:
