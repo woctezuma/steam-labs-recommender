@@ -2,11 +2,12 @@ import json
 
 from download_inputs import download_recommender_inputs
 from download_results import download_recommender_results
-from utils import get_input_file_name, get_result_file_name
+from download_tags import download_recommender_tags
+from utils import get_input_file_name, get_result_file_name, get_tag_file_name
 
 
-def load_inputs():
-    with open(get_input_file_name(), 'r') as f:
+def load_json_from_disk(file_name):
+    with open(file_name, 'r') as f:
         data = json.load(f)
 
     return data

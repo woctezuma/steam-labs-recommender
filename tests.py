@@ -102,6 +102,11 @@ class TestPersonalInfoMethods(unittest.TestCase):
 
 class TestFileUtilsMethods(unittest.TestCase):
 
+    def test_load_json_from_disk(self):
+        file_name = utils.get_tag_file_name()
+        data = file_utils.load_json_from_disk(file_name)
+        self.assertGreater(len(data), 0)
+
     def test_load_inputs(self):
         data = file_utils.load_inputs()
         self.assertEqual(len(data), 50)
