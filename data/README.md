@@ -101,7 +101,7 @@ window.gRecommendations = [
 ];
 ```
 
--   `gTags.json` contains a dictionary matching tag ids to tag names for all the store tags,
+-   `gTags.json` contains a dictionary matching tag ids to tag names for store tags which arise in your recommendations,
 
 ```javascript
 window.gTags = {

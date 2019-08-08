@@ -32,7 +32,7 @@ You can notice parameters other than `sessionid` and `steamid`:
 ## Variables
 
 -   `tags.json` contains the equivalent of:
-    - `gTags.json`.
+    - `gTags.json` (except there are **all the 378 store tags**, not just the ones tailored for your recommended apps).
 
 ![Tags](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v3_tags.png)
 
