@@ -2,11 +2,19 @@ import unittest
 
 import download_inputs
 import download_results
+import download_tags
 import file_utils
 import inverse_problem
 import personal_info
 import release_recency
 import utils
+
+
+class TestDownloadTagsMethods(unittest.TestCase):
+
+    def test_get_recommender_tags_url(self):
+        s = download_tags.get_recommender_tags_url()
+        self.assertGreater(len(s), 0)
 
 
 class TestDownloadInputsMethods(unittest.TestCase):
@@ -27,6 +35,10 @@ class TestUtilsMethods(unittest.TestCase):
 
     def test_get_data_path(self):
         s = utils.get_data_path()
+        self.assertGreater(len(s), 0)
+
+    def test_get_tag_file_name(self):
+        s = utils.get_tag_file_name()
         self.assertGreater(len(s), 0)
 
     def test_get_input_file_name(self):

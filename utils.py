@@ -7,6 +7,12 @@ def get_data_path():
     return data_path
 
 
+def get_tag_file_name():
+    tag_file_name = get_data_path() + "tags.json"
+
+    return tag_file_name
+
+
 def get_input_file_name():
     input_file_name = get_data_path() + "inputs.json"
 
