@@ -113,7 +113,7 @@ class TestFileUtilsMethods(unittest.TestCase):
 
     def test_load_results(self):
         data = file_utils.load_results()
-        self.assertEqual(len(data), 3)
+        self.assertEqual(len(data), 2)
 
     def test_load_input_app_ids(self):
         data = file_utils.load_input_app_ids()
