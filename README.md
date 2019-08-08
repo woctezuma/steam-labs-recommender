@@ -122,6 +122,10 @@ Caveat: if nothing appears, then do not forget to move the sliders.
 Indeed, you might have a recommendation in one of the other pre-computed rankings, and due to ranking interpolation, you
 would have to fiddle with the sliders for a new game to pop in.
 
+**Edit**: Tag filtering was officially extended to every tag with the update shipped on August 8, 2019.
+
+![Extended tag filtering](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/tag_filtering.png)
+
 ## Pieces of advice
 
 -   Setting the slider to "popular" is mostly useful for new Steam users.
