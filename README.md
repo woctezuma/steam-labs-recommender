@@ -42,7 +42,10 @@ Sorting the scores results in a ranking of game recommendations personalized to 
 
 ## Data
 
-Data personalized to my Steam profile is available in the [`data/`](data/) and [`data_v2/`](data_v2/) folders.
+Data personalized to my Steam profile is available in the following folders:
+-   [`data/`](data/),
+-   [`data_v2/`](data_v2/) after [the update](https://steamcommunity.com/groups/SteamLabs/discussions/3/1643170269567305036/) shipped on July 27, 2019,
+-   [`data_v3/`](data_v3/) after [the update](https://steamcommunity.com/groups/SteamLabs/discussions/3/1643170903484574354/) shipped on August 8, 2019.
 
 ## Requirements
 
