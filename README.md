@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 ### Download the inputs and results of the recommender
 
-You could manually download the inputs and results of the recommender to `data_v2/`.
+You could manually download the inputs and results of the recommender to [`data_v3/`](data_v3/).
 Otherwise, this process can be automated after providing the following personal information:
 
 1.   Fill-in your SteamID in the function `get_steam_id()` found in `utils.py`.
