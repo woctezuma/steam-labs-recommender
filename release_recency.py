@@ -60,7 +60,7 @@ def main():
     app_info = load_app_info()
 
     release_recency = get_release_recency(app_id=49520,  # Borderlands 2
-                                          reference_date='2019-07-28',  # Date on which results.json was last downloaded
+                                          reference_date='2019-08-08',  # Date on which results.json was last downloaded
                                           app_info=app_info,
                                           verbose=True)
 
