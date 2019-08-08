@@ -33,16 +33,19 @@ You can notice parameters other than `sessionid` and `steamid`:
 
 -   `tags.json` contains the equivalent of:
     - `gTags.json` (except there are **all the 378 store tags**, not just the ones tailored for your recommended apps).
+    
+NB: Untying tags from recommendations allows to filter tags even if there is no recommendation attached to them.
+Otherwise, some users would not find the tag which they are looking for, wrongly think it is a bug, and ask for a fix.
 
 ![Tags](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v3_tags.png)
 
 -   `inputs.json` contains the equivalent of `gInputApps.json`:
-    - with the addition of a field `t`, which contains the **app name**.
+    - with the addition of a field `t`, which contains the **app name** (so that it can be displayed if mouse-hovering).
     - with the addition of a flag `i` (whether the app is marked as "ignored" by the user).
 
 ![Inputs](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v3_inputs.png)
 
-![Ignore feature](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/ignore_feature.png)
+![Game name displayed when hovering](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/name_hovering.png)
 
 -   `results.json` contains the equivalent of:
     - `gAppInfo.json` in `app_info`,
