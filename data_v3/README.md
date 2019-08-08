@@ -48,5 +48,5 @@ You can notice parameters other than `sessionid` and `steamid`:
     - `gAppInfo.json` in `app_info`,
     - `gRecommendations.json` in `recommendations` (except there are **400 apps per ranking** instead of 200).
 
-![Results](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v2_results.png)
+![Results](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v3_results.png)
 
