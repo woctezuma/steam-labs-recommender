@@ -6,7 +6,7 @@ This repository contains data personalized to my Steam profile.
 
 The data can be found on the [Interactive Recommender](https://store.steampowered.com/recommender/) page.
 
-After the update on August 8, 2019, the data is obtained via three GET queries:
+After the update on August 8, 2019, the data is obtained via **three** GET queries:
 -   to retrieve `tags.json`:
 ```
 https://store.steampowered.com/recommender/STEAM_ID/tags?sessionid=SESSION_ID
@@ -37,7 +37,7 @@ You can notice parameters other than `sessionid` and `steamid`:
 ![Tags](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v3_tags.png)
 
 -   `inputs.json` contains the equivalent of `gInputApps.json`:
-    - with the addition of a field `t`, which contains the app name.
+    - with the addition of a field `t`, which contains the **app name**.
     - with the addition of a flag `i` (whether the app is marked as "ignored" by the user).
 
 ![Inputs](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v3_inputs.png)
