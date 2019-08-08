@@ -2,7 +2,7 @@ from personal_info import get_cookie_dict
 
 
 def get_data_path():
-    data_path = "data_v2/"
+    data_path = "data_v3/"
 
     return data_path
 
