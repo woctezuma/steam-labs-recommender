@@ -43,8 +43,73 @@ def aggregate_recommendations(recommendations=None,
     return aggregated_recommendations
 
 
+def count_rankings(recommendations=None,
+                   verbose=False):
+    if recommendations is None:
+        recommendations = load_recommendations()
+
+    first_ranking_index = 0
+
+    num_rankings = len(recommendations)
+    ranking_size = len(recommendations[first_ranking_index]['app_ids'])
+
+    if verbose:
+        print('There are {} rankings of {} apps.'.format(num_rankings,
+                                                         ranking_size))
+
+    return num_rankings, ranking_size
+
+
+def describe_recommendations(aggregated_recommendations,
+                             verbose=False):
+    stats = dict()
+
+    for (app_id, occurrences) in aggregated_recommendations.items():
+        num_occurrences = len(occurrences)
+
+        try:
+            stats[num_occurrences].append(app_id)
+        except KeyError:
+            stats[num_occurrences] = [app_id]
+
+    if verbose:
+        print('How many apps appear in n rankings?')
+        for i in sorted(stats.keys()):
+            num_apps = len(stats[i])
+            print('[n = {:2} occurrences] {:3} apps.'.format(i, num_apps))
+
+        total_num_apps = get_total_num_apps(stats, verbose=verbose)
+
+        total_num_occurrences = get_total_num_occurrences(stats, verbose=verbose)
+
+    return stats
+
+
+def get_total_num_apps(stats,
+                       verbose=False):
+    total_num_apps = sum(len(l) for l in stats.values())
+
+    if verbose:
+        print('Total: {:5} apps.'.format(total_num_apps))
+
+    return total_num_apps
+
+
+def get_total_num_occurrences(stats,
+                              verbose=False):
+    total_num_occurrences = sum(n * len(l) for (n, l) in stats.items())
+
+    if verbose:
+        print('Total: {:5} occurrences.'.format(total_num_occurrences))
+
+    return total_num_occurrences
+
+
 def main():
     aggregated_recommendations = aggregate_recommendations(verbose=True)
+
+    stats = describe_recommendations(aggregated_recommendations,
+                                     verbose=True)
 
     return
 
