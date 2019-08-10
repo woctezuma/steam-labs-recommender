@@ -160,6 +160,10 @@ class TestReleaseRecencyMethods(unittest.TestCase):
                                                                verbose=True)
         self.assertGreater(delta_time_stamp, 0)
 
+    def test_get_hard_coded_reference_date(self):
+        date_str = release_recency.get_hard_coded_reference_date()
+        self.assertEqual(len(date_str), 10)
+
 
 if __name__ == '__main__':
     unittest.main()
