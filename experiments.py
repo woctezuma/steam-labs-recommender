@@ -1,3 +1,14 @@
+# Objective: compare the recommendations returned in two settings:
+# i)  after excluding the top 50 games, as it can be manually done on the recommender website,
+# ii) after excluding the top 51 games, which is impossible to manually do.
+#
+# The reason behind this experiment is that, if the top 50 games are excluded, then the 51st game should be the most
+# important one. So, including/excluding the 51st game should have a large impact on the results... if the recommender
+# takes it into account.
+#
+# The conclusion of this experiment is that there is not point in excluding any game outside of the top 50, because
+# the recommender system does not seem to take these exclusions into account.
+
 from download_results import download_recommender_results
 from file_utils import load_input_app_ids
 
