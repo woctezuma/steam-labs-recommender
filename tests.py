@@ -138,6 +138,14 @@ class TestInverseProblemMethods(unittest.TestCase):
         popularity_bias_denominator = inverse_problem.get_popularity_bias_denominator()
         self.assertEqual(popularity_bias_denominator, 3)
 
+    def test_get_popularity_bias_range(self):
+        popularity_bias_range = inverse_problem.get_popularity_bias_range()
+        self.assertEqual(popularity_bias_range, [-1, 0, 1, 2, 3])
+
+    def test_get_release_recency_bias_range(self):
+        release_recency_bias_range = inverse_problem.get_release_recency_bias_range()
+        self.assertEqual(release_recency_bias_range, [6, 12, 24, 36, 60, 120])
+
     def test_aggregate_recommendations(self):
         aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=True)
         self.assertGreater(len(aggregated_recommendations), 0)

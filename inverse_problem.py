@@ -7,6 +7,18 @@ def get_popularity_bias_denominator():
     return popularity_bias_denominator
 
 
+def get_popularity_bias_range():
+    popularity_bias_range = [-1, 0, 1, 2, 3]
+
+    return popularity_bias_range
+
+
+def get_release_recency_bias_range():
+    release_recency_bias_range = [6, 12, 24, 36, 60, 120]
+
+    return release_recency_bias_range
+
+
 def aggregate_recommendations(recommendations=None,
                               verbose=False):
     if recommendations is None:
