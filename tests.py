@@ -147,14 +147,14 @@ class TestInverseProblemMethods(unittest.TestCase):
         self.assertEqual(num_rankings, 30)
         self.assertEqual(ranking_size, 400)
 
-    def test_describe_recommendations(self):
+    def test_count_occurrences(self):
         aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=True)
-        stats = inverse_problem.describe_recommendations(aggregated_recommendations, verbose=True)
+        stats = inverse_problem.count_occurrences(aggregated_recommendations, verbose=True)
         self.assertGreater(len(stats), 0)
 
     def test_get_total_num_apps(self):
         aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=True)
-        stats = inverse_problem.describe_recommendations(aggregated_recommendations, verbose=True)
+        stats = inverse_problem.count_occurrences(aggregated_recommendations, verbose=True)
         total_num_apps = inverse_problem.get_total_num_apps(stats, verbose=True)
 
         expected_total_num_apps = len(aggregated_recommendations)
@@ -163,7 +163,7 @@ class TestInverseProblemMethods(unittest.TestCase):
 
     def test_get_total_num_occurrences(self):
         aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=True)
-        stats = inverse_problem.describe_recommendations(aggregated_recommendations, verbose=True)
+        stats = inverse_problem.count_occurrences(aggregated_recommendations, verbose=True)
         total_num_occurrences = inverse_problem.get_total_num_occurrences(stats, verbose=True)
 
         num_rankings, ranking_size = inverse_problem.count_rankings(verbose=True)

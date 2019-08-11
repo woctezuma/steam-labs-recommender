@@ -60,8 +60,8 @@ def count_rankings(recommendations=None,
     return num_rankings, ranking_size
 
 
-def describe_recommendations(aggregated_recommendations,
-                             verbose=False):
+def count_occurrences(aggregated_recommendations,
+                      verbose=False):
     stats = dict()
 
     for (app_id, occurrences) in aggregated_recommendations.items():
@@ -108,8 +108,8 @@ def get_total_num_occurrences(stats,
 def main():
     aggregated_recommendations = aggregate_recommendations(verbose=True)
 
-    stats = describe_recommendations(aggregated_recommendations,
-                                     verbose=True)
+    stats = count_occurrences(aggregated_recommendations,
+                              verbose=True)
 
     return
 
