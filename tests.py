@@ -3,6 +3,7 @@ import unittest
 import download_inputs
 import download_results
 import download_tags
+import extract_regression_data
 import file_utils
 import inverse_problem
 import personal_info
@@ -216,6 +217,52 @@ class TestReleaseRecencyMethods(unittest.TestCase):
     def test_get_hard_coded_reference_date(self):
         date_str = release_recency.get_hard_coded_reference_date()
         self.assertEqual(len(date_str), 10)
+
+
+class TestExtractRegressionDataMethods(unittest.TestCase):
+
+    def test_identify_common_bias(self):
+        bias_val = inverse_problem.get_release_recency_bias_range()
+        bias_occurrences = [0, 2, 5, 10, 5, 1]
+        expected_argmax_ind = 3  # to match the 10
+
+        self.assertEqual(max(bias_occurrences), bias_occurrences[expected_argmax_ind])
+
+        bias_argmax, n = extract_regression_data.identify_common_bias(bias_val,
+                                                                      bias_occurrences)
+
+        self.assertEqual(bias_argmax, bias_val[expected_argmax_ind])
+        self.assertEqual(n, bias_occurrences[expected_argmax_ind])
+
+    def test_extract_data_with_equal_release_recency_bias(self):
+        aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=False)
+
+        app_ids, pb_occurrences_dict, rb_occurrences_dict = inverse_problem.summarize_occurrences(
+            aggregated_recommendations,
+            verbose=False)
+
+        for app_id in app_ids:
+            X, y = extract_regression_data.extract_data_with_equal_release_recency_bias(app_id,
+                                                                                        aggregated_recommendations,
+                                                                                        rb_occurrences_dict,
+                                                                                        verbose=True)
+
+            self.assertEqual(len(X), len(y))
+
+    def test_extract_data_with_equal_popularity_bias(self):
+        aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=False)
+
+        app_ids, pb_occurrences_dict, rb_occurrences_dict = inverse_problem.summarize_occurrences(
+            aggregated_recommendations,
+            verbose=False)
+
+        for app_id in app_ids:
+            X, y = extract_regression_data.extract_data_with_equal_popularity_bias(app_id,
+                                                                                   aggregated_recommendations,
+                                                                                   pb_occurrences_dict,
+                                                                                   verbose=True)
+
+            self.assertEqual(len(X), len(y))
 
 
 if __name__ == '__main__':
