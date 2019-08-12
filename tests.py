@@ -179,6 +179,22 @@ class TestInverseProblemMethods(unittest.TestCase):
 
         self.assertEqual(total_num_occurrences, expected_total_num_occurrences)
 
+    def test_summarize_occurrences(self):
+        aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=True)
+        app_ids, pb_occurrences_dict, rb_occurrences_dict = inverse_problem.summarize_occurrences(
+            aggregated_recommendations,
+            verbose=True)
+
+        self.assertGreater(len(app_ids), 0)
+        self.assertEqual(len(app_ids), len(pb_occurrences_dict))
+        self.assertEqual(len(app_ids), len(rb_occurrences_dict))
+
+        pb_val = inverse_problem.get_popularity_bias_range()
+        rb_val = inverse_problem.get_release_recency_bias_range()
+
+        self.assertTrue(all(len(occurrences) == len(pb_val) for occurrences in pb_occurrences_dict.values()))
+        self.assertTrue(all(len(occurrences) == len(rb_val) for occurrences in rb_occurrences_dict.values()))
+
 
 class TestReleaseRecencyMethods(unittest.TestCase):
 

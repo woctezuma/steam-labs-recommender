@@ -113,11 +113,62 @@ def get_total_num_occurrences(stats,
     return total_num_occurrences
 
 
+def summarize_occurrences(aggregated_recommendations,
+                          stats=None,
+                          chosen_num_occurrences=None,
+                          verbose=False):
+    if stats is None:
+        stats = count_occurrences(aggregated_recommendations, verbose=verbose)
+
+    if chosen_num_occurrences is None:
+        chosen_num_occurrences = max(stats.keys())
+
+    app_ids = stats[chosen_num_occurrences]
+
+    pb_val = get_popularity_bias_range()
+    rb_val = get_release_recency_bias_range()
+
+    pb_occurrences_dict = dict()
+    rb_occurrences_dict = dict()
+
+    for app_id in app_ids:
+        if verbose:
+            print('AppID = {}'.format(app_id))
+
+        val = aggregated_recommendations[app_id]
+
+        pb_occurrences = [0] * len(pb_val)
+        rb_occurrences = [0] * len(rb_val)
+        for elem in val:
+            pb = elem['pb']
+            rb = elem['rb']
+
+            pb_occurrences[pb_val.index(pb)] += 1
+            rb_occurrences[rb_val.index(rb)] += 1
+
+        pb_occurrences_dict[app_id] = pb_occurrences
+        rb_occurrences_dict[app_id] = rb_occurrences
+
+    if verbose:
+        print('AppIDs = {}'.format(app_ids))
+        print('popularity bias = {} ; #occurrences = {}'.format(pb_val,
+                                                                pb_occurrences_dict))
+        print('release recency bias = {} ; #occurrences = {}'.format(rb_val,
+                                                                     rb_occurrences_dict))
+
+    return app_ids, pb_occurrences_dict, rb_occurrences_dict
+
+
 def main():
     aggregated_recommendations = aggregate_recommendations(verbose=True)
 
     stats = count_occurrences(aggregated_recommendations,
                               verbose=True)
+
+    app_ids, pb_occurrences_dict, rb_occurrences_dict = summarize_occurrences(aggregated_recommendations,
+                                                                              stats,
+                                                                              chosen_num_occurrences=max(stats.keys()),
+                                                                              verbose=True)
 
     return
 
