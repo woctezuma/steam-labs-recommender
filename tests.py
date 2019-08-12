@@ -264,6 +264,20 @@ class TestExtractRegressionDataMethods(unittest.TestCase):
 
             self.assertEqual(len(X), len(y))
 
+    def test_extract_data(self):
+        aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=False)
+
+        app_ids, pb_occurrences_dict, rb_occurrences_dict = inverse_problem.summarize_occurrences(
+            aggregated_recommendations,
+            verbose=False)
+
+        for app_id in app_ids:
+            X, y = extract_regression_data.extract_data(app_id,
+                                                        aggregated_recommendations,
+                                                        verbose=True)
+
+            self.assertEqual(len(X), len(y))
+
 
 if __name__ == '__main__':
     unittest.main()

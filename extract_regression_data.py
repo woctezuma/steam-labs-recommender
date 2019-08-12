@@ -76,6 +76,32 @@ def extract_data_with_equal_popularity_bias(app_id,
     return X, y
 
 
+def extract_data(app_id,
+                 aggregated_recommendations,
+                 verbose=False):
+    if verbose:
+        print('Extracting data for appID = {}.'.format(app_id))
+
+    X = []
+    y = []
+
+    for elem in aggregated_recommendations[str(app_id)]:
+        x_i = [
+            elem['popularity_bias'] / get_popularity_bias_denominator(),
+            elem['release_bias']
+        ]
+        y_i = elem['tweaked_score']
+
+        X.append(x_i)
+        y.append(y_i)
+
+    if verbose:
+        print('X = {}'.format(X))
+        print('y = {}'.format(y))
+
+    return X, y
+
+
 def main():
     aggregated_recommendations = aggregate_recommendations(verbose=False)
 
@@ -96,6 +122,9 @@ def main():
                                                        aggregated_recommendations,
                                                        pb_occurrences_dict,
                                                        verbose=True)
+        X, y = extract_data(app_id,
+                            aggregated_recommendations,
+                            verbose=True)
 
     return
 
