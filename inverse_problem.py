@@ -41,13 +41,9 @@ def aggregate_recommendations(recommendations=None,
                                 s=tweaked_output)
 
             try:
-                aggregated_data = aggregated_recommendations[str(app_id)]
+                aggregated_recommendations[str(app_id)].append(current_data)
             except KeyError:
-                aggregated_data = list()
-
-            aggregated_data.append(current_data)
-
-            aggregated_recommendations[str(app_id)] = aggregated_data
+                aggregated_recommendations[str(app_id)] = [current_data]
 
     if verbose:
         print('#recommended apIDs = {}'.format(len(aggregated_recommendations)))
