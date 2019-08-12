@@ -132,9 +132,6 @@ def summarize_occurrences(aggregated_recommendations,
     rb_occurrences_dict = dict()
 
     for app_id in app_ids:
-        if verbose:
-            print('AppID = {}'.format(app_id))
-
         val = aggregated_recommendations[app_id]
 
         pb_occurrences = [0] * len(pb_val)
