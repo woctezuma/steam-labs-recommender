@@ -16,7 +16,7 @@ def extract_data_with_equal_release_recency_bias(app_id,
                                                  rb_occurrences_dict,
                                                  verbose=False):
     rb_argmax, n = identify_common_bias(get_release_recency_bias_range(),
-                                        rb_occurrences_dict[app_id])
+                                        rb_occurrences_dict[str(app_id)])
 
     if verbose:
         print('\nAppID = {}'.format(app_id))
@@ -25,7 +25,7 @@ def extract_data_with_equal_release_recency_bias(app_id,
     X = []
     y = []
 
-    for elem in aggregated_recommendations[app_id]:
+    for elem in aggregated_recommendations[str(app_id)]:
         if elem['release_bias'] == rb_argmax:
             x_i = elem['popularity_bias'] / get_popularity_bias_denominator()
             y_i = elem['tweaked_score']
@@ -48,7 +48,7 @@ def extract_data_with_equal_popularity_bias(app_id,
                                             pb_occurrences_dict,
                                             verbose=False):
     pb_argmax, n = identify_common_bias(get_popularity_bias_range(),
-                                        pb_occurrences_dict[app_id])
+                                        pb_occurrences_dict[str(app_id)])
 
     if verbose:
         print('\nAppID = {}'.format(app_id))
@@ -58,7 +58,7 @@ def extract_data_with_equal_popularity_bias(app_id,
     X = []
     y = []
 
-    for elem in aggregated_recommendations[app_id]:
+    for elem in aggregated_recommendations[str(app_id)]:
         if elem['popularity_bias'] == pb_argmax:
             x_i = elem['release_bias']
             y_i = elem['tweaked_score']
