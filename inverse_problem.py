@@ -36,9 +36,9 @@ def aggregate_recommendations(recommendations=None,
         for (app_id, score) in zip(ranking['app_ids'], ranking['scores']):
             tweaked_output = score_scale * score
 
-            current_data = dict(pb=popularity_bias,
-                                rb=release_recency_bias,
-                                s=tweaked_output)
+            current_data = dict(popularity_bias=popularity_bias,
+                                release_bias=release_recency_bias,
+                                tweaked_score=tweaked_output)
 
             try:
                 aggregated_recommendations[str(app_id)].append(current_data)
@@ -140,8 +140,8 @@ def summarize_occurrences(aggregated_recommendations,
         pb_occurrences = [0] * len(pb_val)
         rb_occurrences = [0] * len(rb_val)
         for elem in val:
-            pb = elem['pb']
-            rb = elem['rb']
+            pb = elem['popularity_bias']
+            rb = elem['release_bias']
 
             pb_occurrences[pb_val.index(pb)] += 1
             rb_occurrences[rb_val.index(rb)] += 1
