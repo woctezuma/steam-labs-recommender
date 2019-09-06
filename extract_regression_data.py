@@ -80,7 +80,8 @@ def extract_data(app_id,
                  aggregated_recommendations,
                  verbose=False):
     if verbose:
-        print('Extracting data for appID = {}.'.format(app_id))
+        print('\nAppID = {}'.format(app_id))
+        print('Extracting all available data.')
 
     X = []
     y = []
