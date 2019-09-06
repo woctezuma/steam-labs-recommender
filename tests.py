@@ -228,9 +228,11 @@ class TestExtractRegressionDataMethods(unittest.TestCase):
 
         self.assertEqual(max(bias_occurrences), bias_occurrences[expected_argmax_ind])
 
-        bias_argmax, n = extract_regression_data.identify_common_bias(bias_val,
-                                                                      bias_occurrences)
+        bias_argmax_list, n = extract_regression_data.identify_common_bias(bias_val,
+                                                                           bias_occurrences)
+        bias_argmax = bias_argmax_list[0]
 
+        self.assertEqual(len(bias_argmax_list), 1)
         self.assertEqual(bias_argmax, bias_val[expected_argmax_ind])
         self.assertEqual(n, bias_occurrences[expected_argmax_ind])
 
@@ -242,12 +244,15 @@ class TestExtractRegressionDataMethods(unittest.TestCase):
             verbose=False)
 
         for app_id in app_ids:
-            X, y = extract_regression_data.extract_data_with_equal_release_recency_bias(app_id,
+            data = extract_regression_data.extract_data_with_equal_release_recency_bias(app_id,
                                                                                         aggregated_recommendations,
                                                                                         rb_occurrences_dict,
                                                                                         verbose=True)
 
-            self.assertEqual(len(X), len(y))
+            for rb_argmax in data:
+                X = data[rb_argmax]['X']
+                y = data[rb_argmax]['y']
+                self.assertEqual(len(X), len(y))
 
     def test_extract_data_with_equal_popularity_bias(self):
         aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=False)
@@ -257,12 +262,14 @@ class TestExtractRegressionDataMethods(unittest.TestCase):
             verbose=False)
 
         for app_id in app_ids:
-            X, y = extract_regression_data.extract_data_with_equal_popularity_bias(app_id,
+            data = extract_regression_data.extract_data_with_equal_popularity_bias(app_id,
                                                                                    aggregated_recommendations,
                                                                                    pb_occurrences_dict,
                                                                                    verbose=True)
-
-            self.assertEqual(len(X), len(y))
+            for pb_argmax in data:
+                X = data[pb_argmax]['X']
+                y = data[pb_argmax]['y']
+                self.assertEqual(len(X), len(y))
 
     def test_extract_data(self):
         aggregated_recommendations = inverse_problem.aggregate_recommendations(verbose=False)
@@ -272,10 +279,12 @@ class TestExtractRegressionDataMethods(unittest.TestCase):
             verbose=False)
 
         for app_id in app_ids:
-            X, y = extract_regression_data.extract_data(app_id,
+            data = extract_regression_data.extract_data(app_id,
                                                         aggregated_recommendations,
                                                         verbose=True)
 
+            X = data['X']
+            y = data['y']
             self.assertEqual(len(X), len(y))
 
 
