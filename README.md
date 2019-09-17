@@ -190,6 +190,7 @@ In conclusion, the recommender is fed more than your top 50 games, likely your w
 
 ## References
 
+-   Microsoft's ["Best Practices on Recommendation Systems"](https://github.com/microsoft/recommenders),
 -   Posts on ResetERA to figure out the meaning of:
     - [the variables](https://www.resetera.com/threads/pc-gaming-era-july-2019-life-liberty-and-the-pursuit-of-richaaaaaaard.126544/page-31#post-22706382),
     - [some interpolation javascript code](https://www.resetera.com/threads/pc-gaming-era-july-2019-life-liberty-and-the-pursuit-of-richaaaaaaard.126544/page-31#post-22707917),
