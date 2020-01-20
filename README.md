@@ -1,6 +1,5 @@
 # Steam Labs Recommender
 
-[![Build status][build-image]][build]
 [![Build status with Github Action][build-image-action]][build-action]
 [![Updates][dependency-image]][pyup]
 [![Python 3][python3-image]][pyup]
