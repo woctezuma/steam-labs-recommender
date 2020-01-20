@@ -1,6 +1,7 @@
 # Steam Labs Recommender
 
 [![Build status][build-image]][build]
+[![Build status with Github Action][build-image-action]][build-action]
 [![Updates][dependency-image]][pyup]
 [![Python 3][python3-image]][pyup]
 [![Code coverage][codecov-image]][codecov]
@@ -205,6 +206,9 @@ In conclusion, the recommender is fed more than your top 50 games, likely your w
 
 [build]: <https://travis-ci.org/woctezuma/steam-labs-recommender>
 [build-image]: <https://travis-ci.org/woctezuma/steam-labs-recommender.svg?branch=master>
+
+[build-action]: <https://github.com/woctezuma/steam-labs-recommender/actions>
+[build-image-action]: <https://github.com/woctezuma/steam-labs-recommender/workflows/Python application/badge.svg?branch=master>
 
 [pyup]: <https://pyup.io/repos/github/woctezuma/steam-labs-recommender/>
 [dependency-image]: <https://pyup.io/repos/github/woctezuma/steam-labs-recommender/shield.svg>
