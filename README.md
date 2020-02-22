@@ -118,7 +118,7 @@ This is a consequence of cutting the pre-computed rankings after 200 entries, an
 
 ### How to filter rankings with any tag
 
-In order not to overwhelm people with [337 tags](https://gist.github.com/woctezuma/f80d1beec6a26fbb92eb16927c682dc7), most tags are not displayed in the drop-down menu.
+In order not to overwhelm people with 337 tags, most tags are not displayed in the drop-down menu.
 
 However, you can manually add them, and the "Interactive Recommender" will work perfectly fine with them!
 All you need is the id for the tag of interest in the HTML page of the "Interactive Recommender". For instance:
