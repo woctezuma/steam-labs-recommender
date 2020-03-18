@@ -12,7 +12,7 @@ This repository contains Python code to tweak the [Interactive Recommender](http
 
 ## Introduction
 
-The "Interactive Recommender" is a tool provided by Valve on July 11, 2019 to suggest personalized game recommendations.
+The "Interactive Recommender" is a tool provided by Valve on July 11, 2019 to suggest personalized game recommendations. On March 18, 2020, the tool was [officially released](https://steamcommunity.com/games/593110/announcements/detail/1716373422378712841) in production for the whole store.
 
 The input is:
 -   the user's 50 most played games, along with [normalized](https://steamcommunity.com/groups/SteamLabs/discussions/3/1643168364649465639/) playtime, last play date, counter of the last played games,
