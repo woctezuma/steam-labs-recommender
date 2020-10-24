@@ -18,7 +18,7 @@ def extract_data_with_equal_release_recency_bias(app_id,
     rb_argmax_list, n = identify_common_bias(get_release_recency_bias_range(),
                                              rb_occurrences_dict[str(app_id)])
 
-    data = dict()
+    data = {}
 
     for rb_argmax in rb_argmax_list:
         if verbose:
@@ -56,7 +56,7 @@ def extract_data_with_equal_popularity_bias(app_id,
     pb_argmax_list, n = identify_common_bias(get_popularity_bias_range(),
                                              pb_occurrences_dict[str(app_id)])
 
-    data = dict()
+    data = {}
 
     for pb_argmax in pb_argmax_list:
         if verbose:
@@ -112,10 +112,8 @@ def extract_data(app_id,
         print('X = {}'.format(X))
         print('y = {}'.format(y))
 
-    data = dict(X=X,
+    return dict(X=X,
                 y=y)
-
-    return data
 
 
 def main():

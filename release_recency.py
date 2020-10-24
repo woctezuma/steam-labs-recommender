@@ -9,9 +9,7 @@ def get_unix_time_stamp():
 
     unix_time_stamp = time.time()
 
-    unix_time_stamp_as_int = int(unix_time_stamp)
-
-    return unix_time_stamp_as_int
+    return int(unix_time_stamp)
 
 
 def convert_str_to_unix_time_stamp(date_as_str,
@@ -21,9 +19,7 @@ def convert_str_to_unix_time_stamp(date_as_str,
     utc_time = datetime.strptime(date_as_str, date_format)
     unix_time_stamp = (utc_time - datetime(1970, 1, 1)).total_seconds()
 
-    unix_time_stamp_as_int = int(unix_time_stamp)
-
-    return unix_time_stamp_as_int
+    return int(unix_time_stamp)
 
 
 def get_release_recency(app_id,

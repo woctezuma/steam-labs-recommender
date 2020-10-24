@@ -8,17 +8,13 @@ def get_recommender_tags_url(steam_id=None):
     if steam_id is None:
         steam_id = get_steam_id()
 
-    recommender_results_url = get_recommender_url(steam_id) + "tags"
-
-    return recommender_results_url
+    return get_recommender_url(steam_id) + "tags"
 
 
 def get_recommender_tags_request_params():
-    params = dict(
+    return dict(
         sessionid=get_session_id(),
     )
-
-    return params
 
 
 def download_recommender_tags():

@@ -2,21 +2,15 @@ from file_utils import load_recommendations
 
 
 def get_popularity_bias_denominator():
-    popularity_bias_denominator = 3
-
-    return popularity_bias_denominator
+    return 3
 
 
 def get_popularity_bias_range():
-    popularity_bias_range = [-1, 0, 1, 2, 3]
-
-    return popularity_bias_range
+    return [-1, 0, 1, 2, 3]
 
 
 def get_release_recency_bias_range():
-    release_recency_bias_range = [6, 12, 24, 36, 60, 120]
-
-    return release_recency_bias_range
+    return [6, 12, 24, 36, 60, 120]
 
 
 def aggregate_recommendations(recommendations=None,
@@ -24,7 +18,7 @@ def aggregate_recommendations(recommendations=None,
     if recommendations is None:
         recommendations = load_recommendations()
 
-    aggregated_recommendations = dict()
+    aggregated_recommendations = {}
 
     for ranking in recommendations:
         settings = ranking['algorithm_options']
@@ -70,7 +64,7 @@ def count_rankings(recommendations=None,
 
 def count_occurrences(aggregated_recommendations,
                       verbose=False):
-    stats = dict()
+    stats = {}
 
     for (app_id, occurrences) in aggregated_recommendations.items():
         num_occurrences = len(occurrences)
@@ -129,7 +123,7 @@ def summarize_occurrences(aggregated_recommendations,
     rb_val = get_release_recency_bias_range()
 
     pb_occurrences_dict = dict()
-    rb_occurrences_dict = dict()
+    rb_occurrences_dict = {}
 
     for app_id in app_ids:
         val = aggregated_recommendations[app_id]

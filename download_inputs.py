@@ -8,18 +8,14 @@ def get_recommender_inputs_url(steam_id=None):
     if steam_id is None:
         steam_id = get_steam_id()
 
-    recommender_results_url = get_recommender_url(steam_id) + "inputs"
-
-    return recommender_results_url
+    return get_recommender_url(steam_id) + "inputs"
 
 
 def get_recommender_inputs_request_params():
-    params = dict(
+    return dict(
         sessionid=get_session_id(),
         steamid=get_steam_id(),
     )
-
-    return params
 
 
 def download_recommender_inputs():

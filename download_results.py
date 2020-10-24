@@ -8,9 +8,7 @@ def get_recommender_results_url(steam_id=None):
     if steam_id is None:
         steam_id = get_steam_id()
 
-    recommender_results_url = get_recommender_url(steam_id) + "results"
-
-    return recommender_results_url
+    return get_recommender_url(steam_id) + "results"
 
 
 def get_recommender_results_request_params(ignored_app_ids=None):

@@ -14,21 +14,15 @@ def load_json_from_disk(file_name):
 
 
 def load_inputs():
-    data = load_json_from_disk(get_input_file_name())
-
-    return data
+    return load_json_from_disk(get_input_file_name())
 
 
 def load_results():
-    data = load_json_from_disk(get_result_file_name())
-
-    return data
+    return load_json_from_disk(get_result_file_name())
 
 
 def load_tags():
-    data = load_json_from_disk(get_tag_file_name())
-
-    return data
+    return load_json_from_disk(get_tag_file_name())
 
 
 def update_inputs():
@@ -67,25 +61,19 @@ def update_tags():
 def load_input_app_ids():
     data = load_inputs()
 
-    input_app_ids = [d["a"] for d in data]
-
-    return input_app_ids
+    return [d["a"] for d in data]
 
 
 def load_app_info():
     data = load_results()
 
-    app_info = data['app_info']
-
-    return app_info
+    return data['app_info']
 
 
 def load_recommendations():
     data = load_results()
 
-    recommendations = data['recommendations']
-
-    return recommendations
+    return data['recommendations']
 
 
 def main(update_json_data=True):

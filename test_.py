@@ -84,9 +84,20 @@ class TestPersonalInfoMethods(unittest.TestCase):
         cookie = personal_info.update_cookie_dict(original_cookie,
                                                   dict_with_new_values,
                                                   verbose=True)
-        self.assertTrue(all(original_cookie[field] == cookie[field] for field in original_cookie.keys()
-                            if field not in dict_with_new_values.keys()))
-        self.assertTrue(all(dict_with_new_values[field] == cookie[field] for field in dict_with_new_values.keys()))
+        self.assertTrue(
+            all(
+                original_cookie[field] == cookie[field]
+                for field in original_cookie
+                if field not in dict_with_new_values.keys()
+            )
+        )
+
+        self.assertTrue(
+            all(
+                dict_with_new_values[field] == cookie[field]
+                for field in dict_with_new_values
+            )
+        )
 
     def test_update_and_save_cookie_to_disk_if_values_changed(self):
         original_cookie = dict(steamLoginSecure='a very secured string',
@@ -96,9 +107,20 @@ class TestPersonalInfoMethods(unittest.TestCase):
                                                                                 dict_with_new_values,
                                                                                 file_name_with_personal_info='temp.txt',
                                                                                 verbose=True)
-        self.assertTrue(all(original_cookie[field] == cookie[field] for field in original_cookie.keys()
-                            if field not in dict_with_new_values.keys()))
-        self.assertTrue(all(dict_with_new_values[field] == cookie[field] for field in dict_with_new_values.keys()))
+        self.assertTrue(
+            all(
+                original_cookie[field] == cookie[field]
+                for field in original_cookie
+                if field not in dict_with_new_values.keys()
+            )
+        )
+
+        self.assertTrue(
+            all(
+                dict_with_new_values[field] == cookie[field]
+                for field in dict_with_new_values
+            )
+        )
 
 
 class TestFileUtilsMethods(unittest.TestCase):
