@@ -226,5 +226,6 @@ In conclusion, the recommender is fed more than your top 50 games, likely your w
 [codacy]: <https://www.codacy.com/app/woctezuma/steam-labs-recommender>
 [codacy-image]: <https://api.codacy.com/project/badge/Grade/34f2fd74cb344d79ae4a6d51746ec987>
 
-[patent-html]: <https://www.freepatentsonline.com/11194879.pdf>
+[patent-html]: <https://www.freepatentsonline.com/11194879.html>
+[patent-pdf-remote]: <https://www.freepatentsonline.com/11194879.pdf>
 [patent-pdf]: <https://github.com/woctezuma/steam-labs-recommender/wiki/pdf/US11194879B2.pdf>
