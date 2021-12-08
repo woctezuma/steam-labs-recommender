@@ -40,6 +40,12 @@ The tweaked outputs are then scaled, so that the top recommendation is always as
 
 Sorting the scores results in a ranking of game recommendations personalized to the user's data.
 
+## Updated information based on a patent
+
+As of December 7, 2021, Valve filed a patent [US 11,194,879 B2][patent-html] ([PDF][patent-pdf] file) which clarifies the situation:
+- popularity, "as determined by sales of the game", is a biasing factor of the score,
+- release recency is used upstream: different models are trained for different values of the release recency!
+
 ## Data
 
 Data personalized to my Steam profile is available in the following folders:
@@ -190,6 +196,7 @@ In conclusion, the recommender is fed more than your top 50 games, likely your w
 
 ## References
 
+-   Valve's [patent US 11,194,879 B2][patent-html] ([PDF][patent-pdf] file)
 -   Microsoft's ["Best Practices on Recommendation Systems"](https://github.com/microsoft/recommenders),
 -   Posts on ResetERA to figure out the meaning of:
     - [the variables](https://www.resetera.com/threads/pc-gaming-era-july-2019-life-liberty-and-the-pursuit-of-richaaaaaaard.126544/page-31#post-22706382),
@@ -218,3 +225,6 @@ In conclusion, the recommender is fed more than your top 50 games, likely your w
 
 [codacy]: <https://www.codacy.com/app/woctezuma/steam-labs-recommender>
 [codacy-image]: <https://api.codacy.com/project/badge/Grade/34f2fd74cb344d79ae4a6d51746ec987>
+
+[patent-html]: <https://www.freepatentsonline.com/11194879.pdf>
+[patent-pdf]: <https://github.com/woctezuma/steam-labs-recommender/wiki/pdf/US11194879B2.pdf>
