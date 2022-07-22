@@ -32,7 +32,7 @@ You can notice parameters other than `sessionid` and `steamid`:
 ## Variables
 
 -   `tags.json` contains the equivalent of:
-    - `gTags.json` (except there are **all the 378 store tags**, not just the ones tailored for your recommended apps).
+    - `gTags.json` (except there are **all the 433 store tags**, not just the ones tailored for your recommended apps).
     
 NB: Untying tags from recommendations allows to filter tags even if there is no recommendation attached to them.
 Otherwise, some users would not find the tag which they are looking for, wrongly think it is a bug, and ask for a fix.
@@ -40,8 +40,9 @@ Otherwise, some users would not find the tag which they are looking for, wrongly
 ![Tags](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v3_tags.png)
 
 -   `inputs.json` contains the equivalent of `gInputApps.json`:
-    - with the addition of a field `t`, which contains the **app name** (so that it can be displayed if mouse-hovering).
+    - with the addition of a field `t` (for "title"), which contains the **app name** (so that it can be displayed if mouse-hovering).
     - with the addition of a flag `i` (whether the app is marked as "ignored" by the user).
+    - with the addition of a flag `ip` (?).
 
 ![Inputs](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v3_inputs.png)
 
@@ -49,7 +50,9 @@ Otherwise, some users would not find the tag which they are looking for, wrongly
 
 -   `results.json` contains the equivalent of:
     - `gAppInfo.json` in `app_info`,
-    - `gRecommendations.json` in `recommendations` (except there are **400 apps per ranking** instead of 200).
+    - `gRecommendations.json` in `recommendations`, except:
+        - there are **400 apps per ranking** instead of 200,
+        - `recommended_apps` has been renamed to `recommended_apps_deprecated` (and thus deprecated).
 
 ![Results](https://raw.githubusercontent.com/wiki/woctezuma/steam-labs-recommender/img/data_v3_results.png)
 
