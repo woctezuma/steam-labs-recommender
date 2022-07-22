@@ -16,16 +16,20 @@
     "name": "Casual"
   },
   {
-    "tagid": 9,
-    "name": "Strategy"
-  },
-  {
     "tagid": 599,
     "name": "Simulation"
   },
   {
     "tagid": 122,
     "name": "RPG"
+  },
+  {
+    "tagid": 9,
+    "name": "Strategy"
+  },
+  {
+    "tagid": 4182,
+    "name": "Singleplayer"
   },
   {
     "tagid": 493,
@@ -36,80 +40,84 @@
     "name": "Free to Play"
   },
   {
-    "tagid": 4182,
-    "name": "Singleplayer"
-  },
-  {
-    "tagid": 4667,
-    "name": "Violent"
-  },
-  {
-    "tagid": 701,
-    "name": "Sports"
-  },
-  {
-    "tagid": 128,
-    "name": "Massively Multiplayer"
-  },
-  {
-    "tagid": 4345,
-    "name": "Gore"
-  },
-  {
-    "tagid": 699,
-    "name": "Racing"
-  },
-  {
-    "tagid": 6650,
-    "name": "Nudity"
-  },
-  {
-    "tagid": 1756,
-    "name": "Great Soundtrack"
+    "tagid": 3871,
+    "name": "2D"
   },
   {
     "tagid": 4166,
     "name": "Atmospheric"
   },
   {
-    "tagid": 12095,
-    "name": "Sexual Content"
+    "tagid": 4191,
+    "name": "3D"
   },
   {
-    "tagid": 3871,
-    "name": "2D"
+    "tagid": 128,
+    "name": "Massively Multiplayer"
   },
   {
     "tagid": 3859,
     "name": "Multiplayer"
   },
   {
-    "tagid": 1664,
-    "name": "Puzzle"
-  },
-  {
     "tagid": 1742,
     "name": "Story Rich"
-  },
-  {
-    "tagid": 4026,
-    "name": "Difficult"
-  },
-  {
-    "tagid": 4085,
-    "name": "Anime"
-  },
-  {
-    "tagid": 21978,
-    "name": "VR"
   },
   {
     "tagid": 1684,
     "name": "Fantasy"
   },
   {
-    "tagid": 1667,
-    "name": "Horror"
+    "tagid": 1664,
+    "name": "Puzzle"
+  },
+  {
+    "tagid": 701,
+    "name": "Sports"
+  },
+  {
+    "tagid": 4667,
+    "name": "Violent"
+  },
+  {
+    "tagid": 4305,
+    "name": "Colorful"
+  },
+  {
+    "tagid": 3964,
+    "name": "Pixel Graphics"
+  },
+  {
+    "tagid": 3834,
+    "name": "Exploration"
+  },
+  {
+    "tagid": 4726,
+    "name": "Cute"
+  },
+  {
+    "tagid": 699,
+    "name": "Racing"
+  },
+  {
+    "tagid": 3839,
+    "name": "First-Person"
+  },
+  {
+    "tagid": 6650,
+    "name": "Nudity"
+  },
+  {
+    "tagid": 12095,
+    "name": "Sexual Content"
+  },
+  {
+    "tagid": 4085,
+    "name": "Anime"
+  },
+  {
+    "tagid": 4345,
+    "name": "Gore"
   },
   {
     "tagid": 4136,
@@ -120,1395 +128,1607 @@
     "name": "Sci-fi"
   },
   {
-    "tagid": 3964,
-    "name": "Pixel Graphics"
-  },
-  {
-    "tagid": 1695,
-    "name": "Open World"
+    "tagid": 1773,
+    "name": "Arcade"
   },
   {
     "tagid": 1774,
     "name": "Shooter"
   },
   {
-    "tagid": 7208,
-    "name": "Female Protagonist"
-  },
-  {
-    "tagid": 3839,
-    "name": "First-Person"
-  },
-  {
-    "tagid": 1625,
-    "name": "Platformer"
-  },
-  {
-    "tagid": 87,
-    "name": "Utilities"
-  },
-  {
-    "tagid": 1685,
-    "name": "Co-op"
-  },
-  {
-    "tagid": 5350,
-    "name": "Family Friendly"
-  },
-  {
-    "tagid": 1662,
-    "name": "Survival"
-  },
-  {
-    "tagid": 1663,
-    "name": "FPS"
-  },
-  {
-    "tagid": 84,
-    "name": "Design & Illustration"
-  },
-  {
-    "tagid": 4004,
-    "name": "Retro"
-  },
-  {
-    "tagid": 1677,
-    "name": "Turn-Based"
-  },
-  {
-    "tagid": 1773,
-    "name": "Arcade"
-  },
-  {
-    "tagid": 1719,
-    "name": "Comedy"
-  },
-  {
-    "tagid": 4700,
-    "name": "Movie"
-  },
-  {
-    "tagid": 3810,
-    "name": "Sandbox"
-  },
-  {
-    "tagid": 3843,
-    "name": "Online Co-Op"
-  },
-  {
-    "tagid": 3834,
-    "name": "Exploration"
-  },
-  {
-    "tagid": 3799,
-    "name": "Visual Novel"
-  },
-  {
-    "tagid": 4726,
-    "name": "Cute"
-  },
-  {
-    "tagid": 4711,
-    "name": "Replay Value"
-  },
-  {
-    "tagid": 1693,
-    "name": "Classic"
-  },
-  {
-    "tagid": 1698,
-    "name": "Point & Click"
-  },
-  {
-    "tagid": 5144,
-    "name": "Masterpiece"
-  },
-  {
-    "tagid": 1721,
-    "name": "Psychological Horror"
-  },
-  {
-    "tagid": 7481,
-    "name": "Controller"
-  },
-  {
-    "tagid": 1654,
-    "name": "Relaxing"
-  },
-  {
-    "tagid": 1697,
-    "name": "Third Person"
-  },
-  {
-    "tagid": 1755,
-    "name": "Space"
-  },
-  {
-    "tagid": 4305,
-    "name": "Colorful"
-  },
-  {
-    "tagid": 1659,
-    "name": "Zombies"
-  },
-  {
-    "tagid": 1036,
-    "name": "Education"
-  },
-  {
-    "tagid": 872,
-    "name": "Animation & Modeling"
-  },
-  {
-    "tagid": 1734,
-    "name": "Fast-Paced"
-  },
-  {
-    "tagid": 10397,
-    "name": "Memes"
-  },
-  {
-    "tagid": 1027,
-    "name": "Audio Production"
-  },
-  {
-    "tagid": 1708,
-    "name": "Tactical"
-  },
-  {
-    "tagid": 7368,
-    "name": "Local Multiplayer"
-  },
-  {
-    "tagid": 4342,
-    "name": "Dark"
-  },
-  {
-    "tagid": 3968,
-    "name": "Physics"
-  },
-  {
-    "tagid": 5716,
-    "name": "Mystery"
-  },
-  {
-    "tagid": 4234,
-    "name": "Short"
-  },
-  {
-    "tagid": 4175,
-    "name": "Realistic"
-  },
-  {
-    "tagid": 8013,
-    "name": "Software"
-  },
-  {
-    "tagid": 1038,
-    "name": "Web Publishing"
-  },
-  {
-    "tagid": 1643,
-    "name": "Building"
-  },
-  {
-    "tagid": 4255,
-    "name": "Shoot 'Em Up"
-  },
-  {
-    "tagid": 5611,
-    "name": "Mature"
-  },
-  {
-    "tagid": 3978,
-    "name": "Survival Horror"
-  },
-  {
-    "tagid": 12472,
-    "name": "Management"
-  },
-  {
-    "tagid": 3841,
-    "name": "Local Co-Op"
-  },
-  {
-    "tagid": 5577,
-    "name": "RPGMaker"
-  },
-  {
-    "tagid": 10695,
-    "name": "Party-Based RPG"
-  },
-  {
-    "tagid": 1716,
-    "name": "Rogue-like"
+    "tagid": 3993,
+    "name": "Combat"
   },
   {
     "tagid": 4106,
     "name": "Action-Adventure"
   },
   {
-    "tagid": 4231,
-    "name": "Action RPG"
+    "tagid": 1654,
+    "name": "Relaxing"
   },
   {
-    "tagid": 3798,
-    "name": "Side Scroller"
+    "tagid": 5350,
+    "name": "Family Friendly"
   },
   {
-    "tagid": 1678,
-    "name": "War"
+    "tagid": 1667,
+    "name": "Horror"
   },
   {
-    "tagid": 6426,
-    "name": "Choices Matter"
+    "tagid": 4004,
+    "name": "Retro"
   },
   {
-    "tagid": 784,
-    "name": "Video Production"
+    "tagid": 1695,
+    "name": "Open World"
   },
   {
-    "tagid": 5900,
-    "name": "Walking Simulator"
+    "tagid": 1625,
+    "name": "Platformer"
   },
   {
-    "tagid": 1702,
-    "name": "Crafting"
+    "tagid": 1685,
+    "name": "Co-op"
   },
   {
-    "tagid": 1741,
-    "name": "Turn-Based Strategy"
+    "tagid": 7208,
+    "name": "Female Protagonist"
   },
   {
-    "tagid": 3987,
-    "name": "Historical"
+    "tagid": 1697,
+    "name": "Third Person"
   },
   {
-    "tagid": 5537,
-    "name": "Puzzle-Platformer"
-  },
-  {
-    "tagid": 1676,
-    "name": "RTS"
-  },
-  {
-    "tagid": 4791,
-    "name": "Top-Down"
-  },
-  {
-    "tagid": 1621,
-    "name": "Music"
-  },
-  {
-    "tagid": 3878,
-    "name": "Competitive"
-  },
-  {
-    "tagid": 4885,
-    "name": "Bullet Hell"
-  },
-  {
-    "tagid": 4747,
-    "name": "Character Customization"
-  },
-  {
-    "tagid": 1738,
-    "name": "Hidden Object"
-  },
-  {
-    "tagid": 1775,
-    "name": "PvP"
-  },
-  {
-    "tagid": 1687,
-    "name": "Stealth"
-  },
-  {
-    "tagid": 1646,
-    "name": "Hack and Slash"
-  },
-  {
-    "tagid": 4604,
-    "name": "Dark Fantasy"
-  },
-  {
-    "tagid": 4434,
-    "name": "JRPG"
-  },
-  {
-    "tagid": 3959,
-    "name": "Rogue-lite"
-  },
-  {
-    "tagid": 1743,
-    "name": "Fighting"
-  },
-  {
-    "tagid": 4094,
-    "name": "Minimalist"
-  },
-  {
-    "tagid": 9551,
-    "name": "Dating Sim"
-  },
-  {
-    "tagid": 3835,
-    "name": "Post-apocalyptic"
-  },
-  {
-    "tagid": 3814,
-    "name": "Third-Person Shooter"
-  },
-  {
-    "tagid": 5125,
-    "name": "Procedural Generation"
-  },
-  {
-    "tagid": 3916,
-    "name": "Old School"
-  },
-  {
-    "tagid": 1645,
-    "name": "Tower Defense"
-  },
-  {
-    "tagid": 1720,
-    "name": "Dungeon Crawler"
-  },
-  {
-    "tagid": 1669,
-    "name": "Moddable"
-  },
-  {
-    "tagid": 4840,
-    "name": "4 Player Local"
-  },
-  {
-    "tagid": 4295,
-    "name": "Futuristic"
-  },
-  {
-    "tagid": 5984,
-    "name": "Drama"
-  },
-  {
-    "tagid": 4172,
-    "name": "Medieval"
-  },
-  {
-    "tagid": 4947,
-    "name": "Romance"
+    "tagid": 1662,
+    "name": "Survival"
   },
   {
     "tagid": 4252,
     "name": "Stylized"
   },
   {
-    "tagid": 4190,
-    "name": "Addictive"
+    "tagid": 1756,
+    "name": "Great Soundtrack"
   },
   {
-    "tagid": 5411,
-    "name": "Beautiful"
+    "tagid": 7481,
+    "name": "Controller"
   },
   {
-    "tagid": 6971,
-    "name": "Multiple Endings"
+    "tagid": 1775,
+    "name": "PvP"
+  },
+  {
+    "tagid": 1719,
+    "name": "Comedy"
+  },
+  {
+    "tagid": 4026,
+    "name": "Difficult"
+  },
+  {
+    "tagid": 6426,
+    "name": "Choices Matter"
+  },
+  {
+    "tagid": 21978,
+    "name": "VR"
+  },
+  {
+    "tagid": 3799,
+    "name": "Visual Novel"
+  },
+  {
+    "tagid": 3916,
+    "name": "Old School"
+  },
+  {
+    "tagid": 4175,
+    "name": "Realistic"
+  },
+  {
+    "tagid": 1663,
+    "name": "FPS"
+  },
+  {
+    "tagid": 4791,
+    "name": "Top-Down"
+  },
+  {
+    "tagid": 3968,
+    "name": "Physics"
+  },
+  {
+    "tagid": 3843,
+    "name": "Online Co-Op"
+  },
+  {
+    "tagid": 4342,
+    "name": "Dark"
+  },
+  {
+    "tagid": 4747,
+    "name": "Character Customization"
+  },
+  {
+    "tagid": 5716,
+    "name": "Mystery"
   },
   {
     "tagid": 4195,
     "name": "Cartoony"
   },
   {
-    "tagid": 7332,
-    "name": "Base Building"
+    "tagid": 5379,
+    "name": "2D Platformer"
   },
   {
-    "tagid": 4325,
-    "name": "Turn-Based Combat"
-  },
-  {
-    "tagid": 1710,
-    "name": "Surreal"
-  },
-  {
-    "tagid": 4242,
-    "name": "Episodic"
-  },
-  {
-    "tagid": 4057,
-    "name": "Magic"
-  },
-  {
-    "tagid": 8945,
-    "name": "Resource Management"
-  },
-  {
-    "tagid": 4150,
-    "name": "World War II"
-  },
-  {
-    "tagid": 4637,
-    "name": "Top-Down Shooter"
-  },
-  {
-    "tagid": 5851,
-    "name": "Isometric"
-  },
-  {
-    "tagid": 1666,
-    "name": "Card Game"
-  },
-  {
-    "tagid": 1754,
-    "name": "MMORPG"
-  },
-  {
-    "tagid": 5923,
-    "name": "Dark Humor"
-  },
-  {
-    "tagid": 4168,
-    "name": "Military"
-  },
-  {
-    "tagid": 5228,
-    "name": "Blood"
-  },
-  {
-    "tagid": 1445,
-    "name": "Software Training"
-  },
-  {
-    "tagid": 7478,
-    "name": "Illuminati"
-  },
-  {
-    "tagid": 4115,
-    "name": "Cyberpunk"
-  },
-  {
-    "tagid": 5752,
-    "name": "Robots"
-  },
-  {
-    "tagid": 5711,
-    "name": "Team-Based"
-  },
-  {
-    "tagid": 4695,
-    "name": "Economy"
-  },
-  {
-    "tagid": 4158,
-    "name": "Beat 'em up"
-  },
-  {
-    "tagid": 1644,
-    "name": "Driving"
-  },
-  {
-    "tagid": 3965,
-    "name": "Epic"
-  },
-  {
-    "tagid": 4064,
-    "name": "Thriller"
-  },
-  {
-    "tagid": 1628,
-    "name": "Metroidvania"
-  },
-  {
-    "tagid": 13782,
-    "name": "Experimental"
-  },
-  {
-    "tagid": 14139,
-    "name": "Turn-Based Tactics"
-  },
-  {
-    "tagid": 4486,
-    "name": "Choose Your Own Adventure"
-  },
-  {
-    "tagid": 5395,
-    "name": "3D Platformer"
-  },
-  {
-    "tagid": 1759,
-    "name": "Perma Death"
-  },
-  {
-    "tagid": 7948,
-    "name": "Soundtrack"
-  },
-  {
-    "tagid": 4328,
-    "name": "City Builder"
-  },
-  {
-    "tagid": 6815,
-    "name": "Hand-drawn"
-  },
-  {
-    "tagid": 1673,
-    "name": "Aliens"
-  },
-  {
-    "tagid": 7782,
-    "name": "Cult Classic"
-  },
-  {
-    "tagid": 13906,
-    "name": "Game Development"
-  },
-  {
-    "tagid": 1770,
-    "name": "Board Game"
-  },
-  {
-    "tagid": 4758,
-    "name": "Twin Stick Shooter"
-  },
-  {
-    "tagid": 4036,
-    "name": "Parkour"
-  },
-  {
-    "tagid": 6378,
-    "name": "Crime"
-  },
-  {
-    "tagid": 11014,
-    "name": "Interactive Fiction"
-  },
-  {
-    "tagid": 31275,
-    "name": "Text-Based"
-  },
-  {
-    "tagid": 5363,
-    "name": "Destruction"
-  },
-  {
-    "tagid": 15045,
-    "name": "Flight"
-  },
-  {
-    "tagid": 4236,
-    "name": "Loot"
-  },
-  {
-    "tagid": 6691,
-    "name": "1990's"
-  },
-  {
-    "tagid": 4562,
-    "name": "Cartoon"
-  },
-  {
-    "tagid": 8122,
-    "name": "Level Editor"
-  },
-  {
-    "tagid": 4191,
-    "name": "3D"
-  },
-  {
-    "tagid": 5547,
-    "name": "Arena Shooter"
-  },
-  {
-    "tagid": 5613,
-    "name": "Detective"
+    "tagid": 6971,
+    "name": "Multiple Endings"
   },
   {
     "tagid": 6730,
     "name": "PvE"
   },
   {
-    "tagid": 4161,
-    "name": "Real-Time"
+    "tagid": 3810,
+    "name": "Sandbox"
   },
   {
-    "tagid": 5186,
-    "name": "Psychological"
-  },
-  {
-    "tagid": 4400,
-    "name": "Abstract"
-  },
-  {
-    "tagid": 11123,
-    "name": "Mouse only"
-  },
-  {
-    "tagid": 4364,
-    "name": "Grand Strategy"
-  },
-  {
-    "tagid": 4975,
-    "name": "2.5D"
-  },
-  {
-    "tagid": 7743,
-    "name": "1980s"
-  },
-  {
-    "tagid": 1718,
-    "name": "MOBA"
-  },
-  {
-    "tagid": 5153,
-    "name": "Kickstarter"
-  },
-  {
-    "tagid": 1777,
-    "name": "Steampunk"
-  },
-  {
-    "tagid": 5030,
-    "name": "Dystopian "
-  },
-  {
-    "tagid": 7107,
-    "name": "Real-Time with Pause"
-  },
-  {
-    "tagid": 1665,
-    "name": "Match 3"
-  },
-  {
-    "tagid": 809,
-    "name": "Photo Editing"
-  },
-  {
-    "tagid": 6129,
-    "name": "Logic"
-  },
-  {
-    "tagid": 7432,
-    "name": "Lovecraftian"
-  },
-  {
-    "tagid": 4598,
-    "name": "Alternate History"
-  },
-  {
-    "tagid": 9541,
-    "name": "Demons"
-  },
-  {
-    "tagid": 44868,
-    "name": "LGBTQ+"
-  },
-  {
-    "tagid": 15339,
-    "name": "Documentary"
-  },
-  {
-    "tagid": 19995,
-    "name": "Dark Comedy"
-  },
-  {
-    "tagid": 379975,
-    "name": "Clicker"
-  },
-  {
-    "tagid": 4736,
-    "name": "2D Fighter"
-  },
-  {
-    "tagid": 10816,
-    "name": "Split Screen"
-  },
-  {
-    "tagid": 16598,
-    "name": "Space Sim"
-  },
-  {
-    "tagid": 1616,
-    "name": "Trains"
-  },
-  {
-    "tagid": 1752,
-    "name": "Rhythm"
-  },
-  {
-    "tagid": 17305,
-    "name": "Strategy RPG"
-  },
-  {
-    "tagid": 1649,
-    "name": "GameMaker"
-  },
-  {
-    "tagid": 29363,
-    "name": "3D Vision"
-  },
-  {
-    "tagid": 1670,
-    "name": "4X"
+    "tagid": 1721,
+    "name": "Psychological Horror"
   },
   {
     "tagid": 7250,
     "name": "Linear"
   },
   {
-    "tagid": 5154,
-    "name": "Score Attack"
+    "tagid": 1708,
+    "name": "Tactical"
   },
   {
-    "tagid": 21725,
-    "name": "Tactical RPG"
+    "tagid": 4172,
+    "name": "Medieval"
   },
   {
-    "tagid": 5348,
-    "name": "Mod"
+    "tagid": 4057,
+    "name": "Magic"
   },
   {
-    "tagid": 5708,
-    "name": "Remake"
+    "tagid": 4094,
+    "name": "Minimalist"
   },
   {
-    "tagid": 3813,
-    "name": "Real Time Tactics"
+    "tagid": 1755,
+    "name": "Space"
   },
   {
-    "tagid": 25085,
-    "name": "Touch-Friendly"
+    "tagid": 4255,
+    "name": "Shoot 'Em Up"
   },
   {
-    "tagid": 5794,
-    "name": "Science"
+    "tagid": 1643,
+    "name": "Building"
   },
   {
-    "tagid": 4821,
-    "name": "Mechs"
+    "tagid": 4295,
+    "name": "Futuristic"
   },
   {
-    "tagid": 4684,
-    "name": "Wargame"
+    "tagid": 4231,
+    "name": "Action RPG"
   },
   {
-    "tagid": 1714,
-    "name": "Psychedelic"
+    "tagid": 1698,
+    "name": "Point & Click"
   },
   {
-    "tagid": 1681,
-    "name": "Pirates"
+    "tagid": 84,
+    "name": "Design & Illustration"
   },
   {
-    "tagid": 176981,
-    "name": "Battle Royale"
+    "tagid": 12472,
+    "name": "Management"
   },
   {
-    "tagid": 12057,
-    "name": "Tutorial"
+    "tagid": 7368,
+    "name": "Local Multiplayer"
   },
   {
-    "tagid": 13276,
-    "name": "Tanks"
+    "tagid": 6815,
+    "name": "Hand-drawn"
   },
   {
-    "tagid": 1688,
-    "name": "Ninja"
+    "tagid": 1702,
+    "name": "Crafting"
   },
   {
-    "tagid": 5055,
-    "name": "eSports"
+    "tagid": 87,
+    "name": "Utilities"
   },
   {
-    "tagid": 5094,
-    "name": "Narration"
+    "tagid": 3798,
+    "name": "Side Scroller"
   },
   {
-    "tagid": 4046,
-    "name": "Dragons"
+    "tagid": 7743,
+    "name": "1980s"
   },
   {
-    "tagid": 3854,
-    "name": "Lore-Rich"
+    "tagid": 4562,
+    "name": "Cartoon"
   },
   {
-    "tagid": 5160,
-    "name": "Dinosaurs"
+    "tagid": 1036,
+    "name": "Education"
   },
   {
-    "tagid": 4853,
-    "name": "Political"
+    "tagid": 5125,
+    "name": "Procedural Generation"
   },
   {
-    "tagid": 1732,
-    "name": "Voxel"
+    "tagid": 8945,
+    "name": "Resource Management"
   },
   {
-    "tagid": 4608,
-    "name": "Swordplay"
+    "tagid": 5537,
+    "name": "Puzzle Platformer"
   },
   {
-    "tagid": 4508,
-    "name": "Co-op Campaign"
+    "tagid": 5611,
+    "name": "Mature"
   },
   {
-    "tagid": 14153,
-    "name": "Dungeons & Dragons"
+    "tagid": 5984,
+    "name": "Drama"
   },
   {
-    "tagid": 31579,
-    "name": "Otome"
+    "tagid": 6129,
+    "name": "Logic"
   },
   {
-    "tagid": 16689,
-    "name": "Time Management"
+    "tagid": 3978,
+    "name": "Survival Horror"
   },
   {
-    "tagid": 9271,
-    "name": "Trading Card Game"
+    "tagid": 1716,
+    "name": "Roguelike"
   },
   {
-    "tagid": 5310,
-    "name": "Games Workshop"
+    "tagid": 4604,
+    "name": "Dark Fantasy"
   },
   {
-    "tagid": 1751,
-    "name": "Comic Book"
+    "tagid": 4325,
+    "name": "Turn-Based Combat"
   },
   {
-    "tagid": 1671,
-    "name": "Superhero"
+    "tagid": 5395,
+    "name": "3D Platformer"
   },
   {
-    "tagid": 8666,
-    "name": "Runner"
+    "tagid": 1678,
+    "name": "War"
   },
   {
-    "tagid": 24904,
-    "name": "NSFW"
+    "tagid": 1677,
+    "name": "Turn-Based"
   },
   {
-    "tagid": 5179,
-    "name": "Cold War"
+    "tagid": 1741,
+    "name": "Turn-Based Strategy"
   },
   {
-    "tagid": 3955,
-    "name": "Character Action Game"
+    "tagid": 4711,
+    "name": "Replay Value"
   },
   {
-    "tagid": 4474,
-    "name": "CRPG"
+    "tagid": 4947,
+    "name": "Romance"
   },
   {
-    "tagid": 10808,
-    "name": "Supernatural"
+    "tagid": 1646,
+    "name": "Hack and Slash"
   },
   {
-    "tagid": 5502,
-    "name": "Hacking"
+    "tagid": 1659,
+    "name": "Zombies"
   },
   {
-    "tagid": 4754,
-    "name": "Politics"
+    "tagid": 4486,
+    "name": "Choose Your Own Adventure"
   },
   {
-    "tagid": 1647,
-    "name": "Western"
+    "tagid": 17389,
+    "name": "Tabletop"
   },
   {
-    "tagid": 1717,
-    "name": "Hex Grid"
+    "tagid": 3959,
+    "name": "Roguelite"
   },
   {
-    "tagid": 5300,
-    "name": "God Game"
+    "tagid": 3835,
+    "name": "Post-apocalyptic"
   },
   {
-    "tagid": 6052,
-    "name": "Noir"
+    "tagid": 3841,
+    "name": "Local Co-Op"
   },
   {
-    "tagid": 8075,
-    "name": "TrackIR"
+    "tagid": 14139,
+    "name": "Turn-Based Tactics"
   },
   {
-    "tagid": 29482,
-    "name": "Souls-like"
+    "tagid": 4434,
+    "name": "JRPG"
   },
   {
-    "tagid": 5765,
-    "name": "Gun Customization"
+    "tagid": 11014,
+    "name": "Interactive Fiction"
   },
   {
-    "tagid": 4376,
-    "name": "Assassin"
-  },
-  {
-    "tagid": 4878,
-    "name": "Parody "
+    "tagid": 7332,
+    "name": "Base Building"
   },
   {
     "tagid": 5608,
     "name": "Emotional"
   },
   {
-    "tagid": 1651,
-    "name": "Satire"
+    "tagid": 9551,
+    "name": "Dating Sim"
   },
   {
-    "tagid": 4145,
-    "name": "Cinematic"
+    "tagid": 3987,
+    "name": "Historical"
   },
   {
-    "tagid": 6910,
-    "name": "Naval"
+    "tagid": 1738,
+    "name": "Hidden Object"
   },
   {
-    "tagid": 15954,
-    "name": "Silent Protagonist"
+    "tagid": 10695,
+    "name": "Party-Based RPG"
   },
   {
-    "tagid": 9994,
-    "name": "Experience"
+    "tagid": 1710,
+    "name": "Surreal"
   },
   {
-    "tagid": 150626,
-    "name": "Gaming"
+    "tagid": 9130,
+    "name": "Hentai"
   },
   {
-    "tagid": 7569,
-    "name": "Grid-Based Movement"
-  },
-  {
-    "tagid": 5673,
-    "name": "Modern"
-  },
-  {
-    "tagid": 6869,
-    "name": "Nonlinear"
-  },
-  {
-    "tagid": 7113,
-    "name": "Crowdfunded"
-  },
-  {
-    "tagid": 22602,
-    "name": "Agriculture"
-  },
-  {
-    "tagid": 6276,
-    "name": "Inventory Management"
-  },
-  {
-    "tagid": 9564,
-    "name": "Hunting"
-  },
-  {
-    "tagid": 11333,
-    "name": "Villain Protagonist"
-  },
-  {
-    "tagid": 3952,
-    "name": "Gothic"
-  },
-  {
-    "tagid": 10679,
-    "name": "Time Travel"
-  },
-  {
-    "tagid": 16094,
-    "name": "Mythology"
-  },
-  {
-    "tagid": 13190,
-    "name": "America"
-  },
-  {
-    "tagid": 8093,
-    "name": "Minigames"
-  },
-  {
-    "tagid": 1680,
-    "name": "Heist"
-  },
-  {
-    "tagid": 134316,
-    "name": "Philisophical"
-  },
-  {
-    "tagid": 4559,
-    "name": "Quick-Time Events"
-  },
-  {
-    "tagid": 4202,
-    "name": "Trading"
-  },
-  {
-    "tagid": 5796,
-    "name": "Bullet Time"
-  },
-  {
-    "tagid": 1638,
-    "name": "Dog"
-  },
-  {
-    "tagid": 4155,
-    "name": "Class-Based"
-  },
-  {
-    "tagid": 7226,
-    "name": "Football"
-  },
-  {
-    "tagid": 9157,
-    "name": "Underwater"
-  },
-  {
-    "tagid": 5390,
-    "name": "Time Attack"
-  },
-  {
-    "tagid": 17894,
-    "name": "Cats"
-  },
-  {
-    "tagid": 4018,
-    "name": "Vampire"
-  },
-  {
-    "tagid": 1679,
-    "name": "Soccer"
-  },
-  {
-    "tagid": 6915,
-    "name": "Martial Arts"
-  },
-  {
-    "tagid": 5382,
-    "name": "World War I"
+    "tagid": 1687,
+    "name": "Stealth"
   },
   {
     "tagid": 30358,
     "name": "Nature"
   },
   {
-    "tagid": 15564,
-    "name": "Fishing"
+    "tagid": 9204,
+    "name": "Immersive Sim"
   },
   {
-    "tagid": 18594,
-    "name": "FMV"
+    "tagid": 5900,
+    "name": "Walking Simulator"
   },
   {
-    "tagid": 4777,
-    "name": "Spectacle fighter"
+    "tagid": 5094,
+    "name": "Narration"
   },
   {
-    "tagid": 3796,
-    "name": "Based On A Novel"
+    "tagid": 1720,
+    "name": "Dungeon Crawler"
   },
   {
-    "tagid": 5372,
-    "name": "Conspiracy"
+    "tagid": 6691,
+    "name": "1990's"
   },
   {
-    "tagid": 6625,
-    "name": "Time Manipulation"
+    "tagid": 10397,
+    "name": "Memes"
   },
   {
-    "tagid": 7423,
-    "name": "Sniper"
+    "tagid": 4885,
+    "name": "Bullet Hell"
   },
   {
-    "tagid": 12286,
-    "name": "Warhammer 40K"
+    "tagid": 5154,
+    "name": "Score Attack"
   },
   {
-    "tagid": 5432,
-    "name": "Programming"
+    "tagid": 1038,
+    "name": "Web Publishing"
   },
   {
-    "tagid": 24003,
-    "name": "Word Game"
+    "tagid": 4168,
+    "name": "Military"
   },
   {
-    "tagid": 8369,
-    "name": "Investigation"
+    "tagid": 3814,
+    "name": "Third-Person Shooter"
   },
   {
-    "tagid": 5230,
-    "name": "Sequel"
+    "tagid": 5752,
+    "name": "Robots"
   },
   {
-    "tagid": 1736,
-    "name": "LEGO"
+    "tagid": 42804,
+    "name": "Action Roguelike"
   },
   {
-    "tagid": 4845,
-    "name": "Capitalism"
+    "tagid": 4637,
+    "name": "Top-Down Shooter"
   },
   {
-    "tagid": 776177,
-    "name": "360 Video"
+    "tagid": 4975,
+    "name": "2.5D"
   },
   {
-    "tagid": 198631,
-    "name": "Mystery Dungeon"
+    "tagid": 1673,
+    "name": "Aliens"
   },
   {
-    "tagid": 5981,
-    "name": "Mining"
+    "tagid": 1734,
+    "name": "Fast-Paced"
   },
   {
-    "tagid": 7622,
-    "name": "Offroad"
-  },
-  {
-    "tagid": 17770,
-    "name": "Asynchronous Multiplayer"
-  },
-  {
-    "tagid": 8253,
-    "name": "Music-Based Procedural Generation"
-  },
-  {
-    "tagid": 7926,
-    "name": "Artificial Intelligence"
-  },
-  {
-    "tagid": 9592,
-    "name": "Dynamic Narration"
-  },
-  {
-    "tagid": 13577,
-    "name": "Sailing"
-  },
-  {
-    "tagid": 6041,
-    "name": "Horses"
-  },
-  {
-    "tagid": 6621,
-    "name": "Pinball"
-  },
-  {
-    "tagid": 4835,
-    "name": "6DOF"
-  },
-  {
-    "tagid": 180368,
-    "name": "Faith"
-  },
-  {
-    "tagid": 4184,
-    "name": "Chess"
-  },
-  {
-    "tagid": 1735,
-    "name": "Star Wars"
-  },
-  {
-    "tagid": 16250,
-    "name": "Gambling"
-  },
-  {
-    "tagid": 6702,
-    "name": "Mars"
-  },
-  {
-    "tagid": 6310,
-    "name": "Diplomacy"
-  },
-  {
-    "tagid": 1733,
-    "name": "Unforgiving"
-  },
-  {
-    "tagid": 348922,
-    "name": "Steam Machine"
-  },
-  {
-    "tagid": 1674,
-    "name": "Typing"
-  },
-  {
-    "tagid": 56690,
-    "name": "On-Rails Shooter"
+    "tagid": 5711,
+    "name": "Team-Based"
   },
   {
     "tagid": 15172,
     "name": "Conversation"
   },
   {
-    "tagid": 6948,
-    "name": "Rome"
+    "tagid": 5851,
+    "name": "Isometric"
   },
   {
-    "tagid": 17015,
-    "name": "Werewolves"
+    "tagid": 4115,
+    "name": "Cyberpunk"
   },
   {
-    "tagid": 9204,
-    "name": "Immersive Sim"
+    "tagid": 31275,
+    "name": "Text-Based"
   },
   {
-    "tagid": 21006,
-    "name": "Underground"
+    "tagid": 4145,
+    "name": "Cinematic"
   },
   {
-    "tagid": 1694,
-    "name": "Batman"
+    "tagid": 1676,
+    "name": "RTS"
   },
   {
-    "tagid": 1730,
-    "name": "Sokoban"
+    "tagid": 1693,
+    "name": "Classic"
   },
   {
-    "tagid": 5407,
-    "name": "Benchmark"
+    "tagid": 5923,
+    "name": "Dark Humor"
   },
   {
-    "tagid": 1746,
-    "name": "Basketball"
+    "tagid": 4234,
+    "name": "Short"
   },
   {
-    "tagid": 7038,
-    "name": "Golf"
+    "tagid": 44868,
+    "name": "LGBTQ+"
   },
   {
-    "tagid": 14906,
-    "name": "Intentionally Awkward Controls"
+    "tagid": 8369,
+    "name": "Investigation"
   },
   {
-    "tagid": 603297,
-    "name": "Hardware"
+    "tagid": 872,
+    "name": "Animation & Modeling"
   },
   {
-    "tagid": 13070,
-    "name": "Solitaire"
+    "tagid": 6869,
+    "name": "Nonlinear"
   },
   {
-    "tagid": 4137,
-    "name": "Transhumanism"
+    "tagid": 8013,
+    "name": "Software"
   },
   {
-    "tagid": 123332,
-    "name": "Bikes"
+    "tagid": 6276,
+    "name": "Inventory Management"
   },
   {
-    "tagid": 22955,
-    "name": "Mini Golf"
+    "tagid": 1666,
+    "name": "Card Game"
   },
   {
-    "tagid": 233824,
-    "name": "Feature Film"
+    "tagid": 12057,
+    "name": "Tutorial"
   },
   {
-    "tagid": 198913,
-    "name": "Motorbike"
+    "tagid": 24904,
+    "name": "NSFW"
   },
   {
-    "tagid": 51306,
-    "name": "Foreign"
+    "tagid": 4695,
+    "name": "Economy"
   },
   {
-    "tagid": 19780,
-    "name": "Submarine"
+    "tagid": 4700,
+    "name": "Movie"
   },
   {
-    "tagid": 5727,
-    "name": "Baseball"
+    "tagid": 1644,
+    "name": "Driving"
   },
   {
-    "tagid": 47827,
-    "name": "Wrestling"
+    "tagid": 4400,
+    "name": "Abstract"
   },
   {
-    "tagid": 7328,
-    "name": "Bowling"
+    "tagid": 7926,
+    "name": "Artificial Intelligence"
   },
   {
-    "tagid": 5914,
-    "name": "Tennis"
+    "tagid": 17305,
+    "name": "Strategy RPG"
   },
   {
-    "tagid": 21722,
-    "name": "Lara Croft"
+    "tagid": 9541,
+    "name": "Demons"
   },
   {
-    "tagid": 17927,
-    "name": "Pool"
+    "tagid": 1759,
+    "name": "Perma Death"
   },
   {
-    "tagid": 19568,
-    "name": "Cycling"
+    "tagid": 379975,
+    "name": "Clicker"
   },
   {
-    "tagid": 324176,
-    "name": "Hockey"
+    "tagid": 10235,
+    "name": "Life Sim"
   },
   {
-    "tagid": 9803,
-    "name": "Snow"
+    "tagid": 3854,
+    "name": "Lore-Rich"
   },
   {
-    "tagid": 17337,
-    "name": "Lemmings"
+    "tagid": 5186,
+    "name": "Psychological"
   },
   {
-    "tagid": 27758,
-    "name": "Voice Control"
+    "tagid": 3813,
+    "name": "Real Time Tactics"
   },
   {
-    "tagid": 71389,
-    "name": "Spelling"
+    "tagid": 1770,
+    "name": "Board Game"
+  },
+  {
+    "tagid": 4064,
+    "name": "Thriller"
+  },
+  {
+    "tagid": 5613,
+    "name": "Detective"
+  },
+  {
+    "tagid": 5577,
+    "name": "RPGMaker"
+  },
+  {
+    "tagid": 4840,
+    "name": "4 Player Local"
+  },
+  {
+    "tagid": 1621,
+    "name": "Music"
+  },
+  {
+    "tagid": 5411,
+    "name": "Beautiful"
+  },
+  {
+    "tagid": 5673,
+    "name": "Modern"
+  },
+  {
+    "tagid": 5547,
+    "name": "Arena Shooter"
+  },
+  {
+    "tagid": 15045,
+    "name": "Flight"
+  },
+  {
+    "tagid": 13782,
+    "name": "Experimental"
+  },
+  {
+    "tagid": 7948,
+    "name": "Soundtrack"
+  },
+  {
+    "tagid": 1743,
+    "name": "Fighting"
+  },
+  {
+    "tagid": 5030,
+    "name": "Dystopian "
+  },
+  {
+    "tagid": 3877,
+    "name": "Precision Platformer"
+  },
+  {
+    "tagid": 1645,
+    "name": "Tower Defense"
+  },
+  {
+    "tagid": 16689,
+    "name": "Time Management"
+  },
+  {
+    "tagid": 1714,
+    "name": "Psychedelic"
+  },
+  {
+    "tagid": 4328,
+    "name": "City Builder"
+  },
+  {
+    "tagid": 4236,
+    "name": "Loot"
+  },
+  {
+    "tagid": 21725,
+    "name": "Tactical RPG"
+  },
+  {
+    "tagid": 10808,
+    "name": "Supernatural"
+  },
+  {
+    "tagid": 1669,
+    "name": "Moddable"
+  },
+  {
+    "tagid": 5363,
+    "name": "Destruction"
+  },
+  {
+    "tagid": 1027,
+    "name": "Audio Production"
+  },
+  {
+    "tagid": 4158,
+    "name": "Beat 'em up"
+  },
+  {
+    "tagid": 1628,
+    "name": "Metroidvania"
+  },
+  {
+    "tagid": 4684,
+    "name": "Wargame"
+  },
+  {
+    "tagid": 4598,
+    "name": "Alternate History"
+  },
+  {
+    "tagid": 784,
+    "name": "Video Production"
+  },
+  {
+    "tagid": 29482,
+    "name": "Souls-like"
+  },
+  {
+    "tagid": 3878,
+    "name": "Competitive"
+  },
+  {
+    "tagid": 1751,
+    "name": "Comic Book"
+  },
+  {
+    "tagid": 8122,
+    "name": "Level Editor"
+  },
+  {
+    "tagid": 16094,
+    "name": "Mythology"
+  },
+  {
+    "tagid": 6378,
+    "name": "Crime"
+  },
+  {
+    "tagid": 7569,
+    "name": "Grid-Based Movement"
+  },
+  {
+    "tagid": 8666,
+    "name": "Runner"
+  },
+  {
+    "tagid": 4036,
+    "name": "Parkour"
+  },
+  {
+    "tagid": 13906,
+    "name": "Game Development"
+  },
+  {
+    "tagid": 4736,
+    "name": "2D Fighter"
+  },
+  {
+    "tagid": 1754,
+    "name": "MMORPG"
+  },
+  {
+    "tagid": 19995,
+    "name": "Dark Comedy"
+  },
+  {
+    "tagid": 4474,
+    "name": "CRPG"
+  },
+  {
+    "tagid": 4150,
+    "name": "World War II"
+  },
+  {
+    "tagid": 5652,
+    "name": "Collectathon"
+  },
+  {
+    "tagid": 15277,
+    "name": "Philosophical"
+  },
+  {
+    "tagid": 4155,
+    "name": "Class-Based"
+  },
+  {
+    "tagid": 5794,
+    "name": "Science"
+  },
+  {
+    "tagid": 615955,
+    "name": "Idler"
+  },
+  {
+    "tagid": 1100687,
+    "name": "Automobile Sim"
+  },
+  {
+    "tagid": 4508,
+    "name": "Co-op Campaign"
+  },
+  {
+    "tagid": 4758,
+    "name": "Twin Stick Shooter"
+  },
+  {
+    "tagid": 5765,
+    "name": "Gun Customization"
+  },
+  {
+    "tagid": 3955,
+    "name": "Character Action Game"
+  },
+  {
+    "tagid": 32322,
+    "name": "Deckbuilding"
+  },
+  {
+    "tagid": 16598,
+    "name": "Space Sim"
+  },
+  {
+    "tagid": 4364,
+    "name": "Grand Strategy"
+  },
+  {
+    "tagid": 1752,
+    "name": "Rhythm"
+  },
+  {
+    "tagid": 4608,
+    "name": "Swordplay"
+  },
+  {
+    "tagid": 1445,
+    "name": "Software Training"
+  },
+  {
+    "tagid": 17894,
+    "name": "Cats"
+  },
+  {
+    "tagid": 7432,
+    "name": "Lovecraftian"
+  },
+  {
+    "tagid": 176981,
+    "name": "Battle Royale"
+  },
+  {
+    "tagid": 4046,
+    "name": "Dragons"
+  },
+  {
+    "tagid": 11104,
+    "name": "Vehicular Combat"
+  },
+  {
+    "tagid": 5228,
+    "name": "Blood"
+  },
+  {
+    "tagid": 791774,
+    "name": "Card Battler"
+  },
+  {
+    "tagid": 4190,
+    "name": "Addictive"
+  },
+  {
+    "tagid": 4835,
+    "name": "6DOF"
+  },
+  {
+    "tagid": 5055,
+    "name": "eSports"
+  },
+  {
+    "tagid": 13190,
+    "name": "America"
+  },
+  {
+    "tagid": 6506,
+    "name": "3D Fighter"
+  },
+  {
+    "tagid": 29363,
+    "name": "3D Vision"
+  },
+  {
+    "tagid": 1665,
+    "name": "Match 3"
+  },
+  {
+    "tagid": 6052,
+    "name": "Noir"
+  },
+  {
+    "tagid": 10816,
+    "name": "Split Screen"
+  },
+  {
+    "tagid": 5372,
+    "name": "Conspiracy"
+  },
+  {
+    "tagid": 4878,
+    "name": "Parody "
+  },
+  {
+    "tagid": 4845,
+    "name": "Capitalism"
+  },
+  {
+    "tagid": 1651,
+    "name": "Satire"
+  },
+  {
+    "tagid": 7478,
+    "name": "Illuminati"
+  },
+  {
+    "tagid": 5796,
+    "name": "Bullet Time"
+  },
+  {
+    "tagid": 1100689,
+    "name": "Open World Survival Craft"
   },
   {
     "tagid": 255534,
     "name": "Automation"
   },
   {
-    "tagid": 15868,
-    "name": "Motocross"
+    "tagid": 4202,
+    "name": "Trading"
   },
   {
-    "tagid": 1753,
-    "name": "Skateboarding"
+    "tagid": 220585,
+    "name": "Colony Sim"
   },
   {
-    "tagid": 92092,
-    "name": "Jet"
+    "tagid": 198631,
+    "name": "Mystery Dungeon"
+  },
+  {
+    "tagid": 4853,
+    "name": "Political"
+  },
+  {
+    "tagid": 6625,
+    "name": "Time Manipulation"
+  },
+  {
+    "tagid": 1732,
+    "name": "Voxel"
+  },
+  {
+    "tagid": 1777,
+    "name": "Steampunk"
+  },
+  {
+    "tagid": 620519,
+    "name": "Hero Shooter"
+  },
+  {
+    "tagid": 3952,
+    "name": "Gothic"
+  },
+  {
+    "tagid": 4559,
+    "name": "Quick-Time Events"
+  },
+  {
+    "tagid": 87918,
+    "name": "Farming Sim"
+  },
+  {
+    "tagid": 9592,
+    "name": "Dynamic Narration"
+  },
+  {
+    "tagid": 22602,
+    "name": "Agriculture"
+  },
+  {
+    "tagid": 21006,
+    "name": "Underground"
+  },
+  {
+    "tagid": 4821,
+    "name": "Mechs"
+  },
+  {
+    "tagid": 10679,
+    "name": "Time Travel"
+  },
+  {
+    "tagid": 5981,
+    "name": "Mining"
+  },
+  {
+    "tagid": 809,
+    "name": "Photo Editing"
+  },
+  {
+    "tagid": 11123,
+    "name": "Mouse only"
+  },
+  {
+    "tagid": 24003,
+    "name": "Word Game"
+  },
+  {
+    "tagid": 9564,
+    "name": "Hunting"
+  },
+  {
+    "tagid": 916648,
+    "name": "Creature Collector"
+  },
+  {
+    "tagid": 4161,
+    "name": "Real-Time"
+  },
+  {
+    "tagid": 6915,
+    "name": "Martial Arts"
+  },
+  {
+    "tagid": 1718,
+    "name": "MOBA"
+  },
+  {
+    "tagid": 7782,
+    "name": "Cult Classic"
+  },
+  {
+    "tagid": 13276,
+    "name": "Tanks"
+  },
+  {
+    "tagid": 3965,
+    "name": "Epic"
+  },
+  {
+    "tagid": 31579,
+    "name": "Otome"
+  },
+  {
+    "tagid": 4242,
+    "name": "Episodic"
+  },
+  {
+    "tagid": 353880,
+    "name": "Looter Shooter"
+  },
+  {
+    "tagid": 4777,
+    "name": "Spectacle fighter"
+  },
+  {
+    "tagid": 1638,
+    "name": "Dog"
+  },
+  {
+    "tagid": 4102,
+    "name": "Combat Racing"
+  },
+  {
+    "tagid": 5300,
+    "name": "God Game"
+  },
+  {
+    "tagid": 1688,
+    "name": "Ninja"
+  },
+  {
+    "tagid": 5502,
+    "name": "Hacking"
+  },
+  {
+    "tagid": 13070,
+    "name": "Solitaire"
+  },
+  {
+    "tagid": 1681,
+    "name": "Pirates"
+  },
+  {
+    "tagid": 4754,
+    "name": "Politics"
+  },
+  {
+    "tagid": 5708,
+    "name": "Remake"
+  },
+  {
+    "tagid": 17770,
+    "name": "Asynchronous Multiplayer"
+  },
+  {
+    "tagid": 1717,
+    "name": "Hex Grid"
+  },
+  {
+    "tagid": 18594,
+    "name": "FMV"
+  },
+  {
+    "tagid": 5179,
+    "name": "Cold War"
+  },
+  {
+    "tagid": 3920,
+    "name": "Cooking"
+  },
+  {
+    "tagid": 9271,
+    "name": "Trading Card Game"
+  },
+  {
+    "tagid": 1671,
+    "name": "Superhero"
+  },
+  {
+    "tagid": 4376,
+    "name": "Assassin"
+  },
+  {
+    "tagid": 1670,
+    "name": "4X"
+  },
+  {
+    "tagid": 15564,
+    "name": "Fishing"
+  },
+  {
+    "tagid": 9157,
+    "name": "Underwater"
+  },
+  {
+    "tagid": 5432,
+    "name": "Programming"
+  },
+  {
+    "tagid": 5160,
+    "name": "Dinosaurs"
+  },
+  {
+    "tagid": 4018,
+    "name": "Vampire"
+  },
+  {
+    "tagid": 3934,
+    "name": "Immersive"
+  },
+  {
+    "tagid": 7702,
+    "name": "Narrative"
+  },
+  {
+    "tagid": 180368,
+    "name": "Faith"
+  },
+  {
+    "tagid": 1730,
+    "name": "Sokoban"
+  },
+  {
+    "tagid": 6910,
+    "name": "Naval"
+  },
+  {
+    "tagid": 1647,
+    "name": "Western"
+  },
+  {
+    "tagid": 1680,
+    "name": "Heist"
+  },
+  {
+    "tagid": 7107,
+    "name": "Real-Time with Pause"
+  },
+  {
+    "tagid": 26921,
+    "name": "Political Sim"
+  },
+  {
+    "tagid": 1616,
+    "name": "Trains"
+  },
+  {
+    "tagid": 7108,
+    "name": "Party"
+  },
+  {
+    "tagid": 1084988,
+    "name": "Auto Battler"
+  },
+  {
+    "tagid": 8093,
+    "name": "Minigames"
+  },
+  {
+    "tagid": 7178,
+    "name": "Party Game"
+  },
+  {
+    "tagid": 1723,
+    "name": "Action RTS"
+  },
+  {
+    "tagid": 13382,
+    "name": "Archery"
+  },
+  {
+    "tagid": 6310,
+    "name": "Diplomacy"
+  },
+  {
+    "tagid": 5153,
+    "name": "Kickstarter"
   },
   {
     "tagid": 10383,
     "name": "Transportation"
   },
   {
-    "tagid": 96359,
-    "name": "Skating"
+    "tagid": 51306,
+    "name": "Foreign"
   },
   {
-    "tagid": 252854,
-    "name": "BMX"
+    "tagid": 9803,
+    "name": "Snow"
   },
   {
-    "tagid": 28444,
-    "name": "Snowboarding"
+    "tagid": 4994,
+    "name": "Naval Combat"
   },
   {
-    "tagid": 7309,
-    "name": "Skiing"
+    "tagid": 1649,
+    "name": "GameMaker"
   },
   {
-    "tagid": 129761,
-    "name": "ATV"
+    "tagid": 5348,
+    "name": "Mod"
+  },
+  {
+    "tagid": 14153,
+    "name": "Dungeons & Dragons"
+  },
+  {
+    "tagid": 25085,
+    "name": "Touch-Friendly"
+  },
+  {
+    "tagid": 9994,
+    "name": "Experience"
+  },
+  {
+    "tagid": 5230,
+    "name": "Sequel"
+  },
+  {
+    "tagid": 16250,
+    "name": "Gambling"
+  },
+  {
+    "tagid": 4137,
+    "name": "Transhumanism"
+  },
+  {
+    "tagid": 13577,
+    "name": "Sailing"
+  },
+  {
+    "tagid": 7423,
+    "name": "Sniper"
+  },
+  {
+    "tagid": 8253,
+    "name": "Music-Based Procedural Generation"
+  },
+  {
+    "tagid": 11333,
+    "name": "Villain Protagonist"
+  },
+  {
+    "tagid": 1674,
+    "name": "Typing"
+  },
+  {
+    "tagid": 6702,
+    "name": "Mars"
+  },
+  {
+    "tagid": 5390,
+    "name": "Time Attack"
+  },
+  {
+    "tagid": 14720,
+    "name": "Nostalgia"
+  },
+  {
+    "tagid": 56690,
+    "name": "On-Rails Shooter"
+  },
+  {
+    "tagid": 7622,
+    "name": "Offroad"
+  },
+  {
+    "tagid": 5382,
+    "name": "World War I"
+  },
+  {
+    "tagid": 1679,
+    "name": "Soccer"
+  },
+  {
+    "tagid": 5310,
+    "name": "Games Workshop"
+  },
+  {
+    "tagid": 769306,
+    "name": "Escape Room"
+  },
+  {
+    "tagid": 6041,
+    "name": "Horses"
+  },
+  {
+    "tagid": 15339,
+    "name": "Documentary"
+  },
+  {
+    "tagid": 7226,
+    "name": "Football"
+  },
+  {
+    "tagid": 17015,
+    "name": "Werewolves"
+  },
+  {
+    "tagid": 10437,
+    "name": "Trivia"
+  },
+  {
+    "tagid": 150626,
+    "name": "Gaming"
+  },
+  {
+    "tagid": 454187,
+    "name": "Traditional Roguelike"
+  },
+  {
+    "tagid": 4520,
+    "name": "Farming"
+  },
+  {
+    "tagid": 1091588,
+    "name": "Roguelike Deckbuilder"
+  },
+  {
+    "tagid": 12190,
+    "name": "Boxing"
+  },
+  {
+    "tagid": 776177,
+    "name": "360 Video"
+  },
+  {
+    "tagid": 15954,
+    "name": "Silent Protagonist"
+  },
+  {
+    "tagid": 4184,
+    "name": "Chess"
+  },
+  {
+    "tagid": 7113,
+    "name": "Crowdfunded"
+  },
+  {
+    "tagid": 92092,
+    "name": "Jet"
+  },
+  {
+    "tagid": 1733,
+    "name": "Unforgiving"
+  },
+  {
+    "tagid": 1100686,
+    "name": "Outbreak Sim"
+  },
+  {
+    "tagid": 1736,
+    "name": "LEGO"
+  },
+  {
+    "tagid": 4291,
+    "name": "Spaceships"
   },
   {
     "tagid": 856791,
     "name": "Asymmetric VR"
   },
   {
+    "tagid": 6948,
+    "name": "Rome"
+  },
+  {
+    "tagid": 198913,
+    "name": "Motorbike"
+  },
+  {
+    "tagid": 71389,
+    "name": "Spelling"
+  },
+  {
+    "tagid": 1100688,
+    "name": "Medical Sim"
+  },
+  {
+    "tagid": 7038,
+    "name": "Golf"
+  },
+  {
+    "tagid": 8075,
+    "name": "TrackIR"
+  },
+  {
+    "tagid": 61357,
+    "name": "Electronic Music"
+  },
+  {
+    "tagid": 29855,
+    "name": "Ambient"
+  },
+  {
+    "tagid": 19780,
+    "name": "Submarine"
+  },
+  {
+    "tagid": 6621,
+    "name": "Pinball"
+  },
+  {
+    "tagid": 922563,
+    "name": "Roguevania"
+  },
+  {
+    "tagid": 123332,
+    "name": "Bikes"
+  },
+  {
+    "tagid": 12286,
+    "name": "Warhammer 40K"
+  },
+  {
+    "tagid": 1746,
+    "name": "Basketball"
+  },
+  {
     "tagid": 745697,
     "name": "Social Deduction"
+  },
+  {
+    "tagid": 3796,
+    "name": "Based On A Novel"
+  },
+  {
+    "tagid": 11634,
+    "name": "Vikings"
+  },
+  {
+    "tagid": 22955,
+    "name": "Mini Golf"
+  },
+  {
+    "tagid": 1753,
+    "name": "Skateboarding"
+  },
+  {
+    "tagid": 47827,
+    "name": "Wrestling"
+  },
+  {
+    "tagid": 189941,
+    "name": "Instrumental Music"
+  },
+  {
+    "tagid": 14906,
+    "name": "Intentionally Awkward Controls"
+  },
+  {
+    "tagid": 17927,
+    "name": "Pool"
+  },
+  {
+    "tagid": 5914,
+    "name": "Tennis"
+  },
+  {
+    "tagid": 5727,
+    "name": "Baseball"
+  },
+  {
+    "tagid": 96359,
+    "name": "Skating"
+  },
+  {
+    "tagid": 15868,
+    "name": "Motocross"
+  },
+  {
+    "tagid": 17337,
+    "name": "Lemmings"
+  },
+  {
+    "tagid": 5407,
+    "name": "Benchmark"
+  },
+  {
+    "tagid": 19568,
+    "name": "Cycling"
+  },
+  {
+    "tagid": 603297,
+    "name": "Hardware"
+  },
+  {
+    "tagid": 348922,
+    "name": "Steam Machine"
+  },
+  {
+    "tagid": 324176,
+    "name": "Hockey"
+  },
+  {
+    "tagid": 337964,
+    "name": "Rock Music"
+  },
+  {
+    "tagid": 7328,
+    "name": "Bowling"
+  },
+  {
+    "tagid": 11095,
+    "name": "Boss Rush"
+  },
+  {
+    "tagid": 117648,
+    "name": "8-bit Music"
+  },
+  {
+    "tagid": 129761,
+    "name": "ATV"
+  },
+  {
+    "tagid": 143739,
+    "name": "Electronic"
+  },
+  {
+    "tagid": 42089,
+    "name": "Jump Scare"
+  },
+  {
+    "tagid": 252854,
+    "name": "BMX"
+  },
+  {
+    "tagid": 8461,
+    "name": "Well-Written"
+  },
+  {
+    "tagid": 27758,
+    "name": "Voice Control"
+  },
+  {
+    "tagid": 28444,
+    "name": "Snowboarding"
+  },
+  {
+    "tagid": 233824,
+    "name": "Feature Film"
+  },
+  {
+    "tagid": 7309,
+    "name": "Skiing"
+  },
+  {
+    "tagid": 552282,
+    "name": "Wholesome"
+  },
+  {
+    "tagid": 323922,
+    "name": "Musou"
+  },
+  {
+    "tagid": 97376,
+    "name": "Cozy"
+  },
+  {
+    "tagid": 5941,
+    "name": "Reboot"
+  },
+  {
+    "tagid": 158638,
+    "name": "Cricket"
+  },
+  {
+    "tagid": 35079,
+    "name": "Job Simulator"
+  },
+  {
+    "tagid": 847164,
+    "name": "Volleyball"
   }
 ]
