@@ -7,7 +7,7 @@ from utils import get_input_file_name, get_result_file_name, get_tag_file_name
 
 
 def load_json_from_disk(file_name):
-    with open(file_name, 'r') as f:
+    with open(file_name) as f:
         data = json.load(f)
 
     return data
@@ -101,7 +101,7 @@ def main(update_json_data=True):
     recommendations = load_recommendations()
     tags = load_tags()
 
-    print('#tags = {}'.format(len(tags)))
+    print(f'#tags = {len(tags)}')
 
     return
 

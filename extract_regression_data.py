@@ -1,12 +1,10 @@
 from inverse_problem import (
     aggregate_recommendations,
     count_occurrences,
-    summarize_occurrences,
-)
-from inverse_problem import (
     get_popularity_bias_denominator,
     get_popularity_bias_range,
     get_release_recency_bias_range,
+    summarize_occurrences,
 )
 
 
@@ -31,11 +29,11 @@ def extract_data_with_equal_release_recency_bias(
         rb_occurrences_dict[str(app_id)],
     )
 
-    data = dict()
+    data = {}
 
     for rb_argmax in rb_argmax_list:
         if verbose:
-            print('\nAppID = {}'.format(app_id))
+            print(f'\nAppID = {app_id}')
             print(
                 'Extracting data with release recency bias equal to {} months.'.format(
                     rb_argmax,
@@ -54,13 +52,13 @@ def extract_data_with_equal_release_recency_bias(
                 y.append(y_i)
 
         if verbose:
-            print('X = {}'.format(X))
-            print('y = {}'.format(y))
+            print(f'X = {X}')
+            print(f'y = {y}')
 
         if len(y) != n:
             raise AssertionError()
 
-        data[str(rb_argmax)] = dict(X=X, y=y)
+        data[str(rb_argmax)] = {"X": X, "y": y}
 
     return data
 
@@ -76,11 +74,11 @@ def extract_data_with_equal_popularity_bias(
         pb_occurrences_dict[str(app_id)],
     )
 
-    data = dict()
+    data = {}
 
     for pb_argmax in pb_argmax_list:
         if verbose:
-            print('\nAppID = {}'.format(app_id))
+            print(f'\nAppID = {app_id}')
             print(
                 'Extracting data with popularity bias equal to {}/{}.'.format(
                     pb_argmax,
@@ -100,20 +98,20 @@ def extract_data_with_equal_popularity_bias(
                 y.append(y_i)
 
         if verbose:
-            print('X = {}'.format(X))
-            print('y = {}'.format(y))
+            print(f'X = {X}')
+            print(f'y = {y}')
 
         if len(y) != n:
             raise AssertionError()
 
-        data[str(pb_argmax)] = dict(X=X, y=y)
+        data[str(pb_argmax)] = {"X": X, "y": y}
 
     return data
 
 
 def extract_data(app_id, aggregated_recommendations, verbose=False):
     if verbose:
-        print('\nAppID = {}'.format(app_id))
+        print(f'\nAppID = {app_id}')
         print('Extracting all available data.')
 
     X = []
@@ -130,10 +128,10 @@ def extract_data(app_id, aggregated_recommendations, verbose=False):
         y.append(y_i)
 
     if verbose:
-        print('X = {}'.format(X))
-        print('y = {}'.format(y))
+        print(f'X = {X}')
+        print(f'y = {y}')
 
-    data = dict(X=X, y=y)
+    data = {"X": X, "y": y}
 
     return data
 

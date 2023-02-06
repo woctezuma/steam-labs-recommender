@@ -4,7 +4,7 @@ from personal_info import (
     get_cookie_dict,
     update_and_save_cookie_to_disk_if_values_changed,
 )
-from utils import get_steam_id, get_session_id, get_recommender_url
+from utils import get_recommender_url, get_session_id, get_steam_id
 
 
 def get_recommender_tags_url(steam_id=None):
@@ -17,9 +17,9 @@ def get_recommender_tags_url(steam_id=None):
 
 
 def get_recommender_tags_request_params():
-    params = dict(
-        sessionid=get_session_id(),
-    )
+    params = {
+        "sessionid": get_session_id(),
+    }
 
     return params
 
@@ -38,7 +38,7 @@ def download_recommender_tags():
         update_and_save_cookie_to_disk_if_values_changed(cookies, jar)
     else:
         print(
-            'Download of tags failed with status code {}.'.format(response.status_code),
+            f'Download of tags failed with status code {response.status_code}.',
         )
         result = None
 
