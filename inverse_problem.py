@@ -19,8 +19,7 @@ def get_release_recency_bias_range():
     return release_recency_bias_range
 
 
-def aggregate_recommendations(recommendations=None,
-                              verbose=False):
+def aggregate_recommendations(recommendations=None, verbose=False):
     if recommendations is None:
         recommendations = load_recommendations()
 
@@ -29,16 +28,20 @@ def aggregate_recommendations(recommendations=None,
     for ranking in recommendations:
         settings = ranking['algorithm_options']
 
-        popularity_bias = int(get_popularity_bias_denominator() * float(settings['popularity_bias']))
+        popularity_bias = int(
+            get_popularity_bias_denominator() * float(settings['popularity_bias']),
+        )
         release_recency_bias = int(settings['release_recency_bias'])
         score_scale = float(ranking['score_scale'])
 
-        for (app_id, score) in zip(ranking['app_ids'], ranking['scores']):
+        for app_id, score in zip(ranking['app_ids'], ranking['scores']):
             tweaked_output = score_scale * score
 
-            current_data = dict(popularity_bias=popularity_bias,
-                                release_bias=release_recency_bias,
-                                tweaked_score=tweaked_output)
+            current_data = dict(
+                popularity_bias=popularity_bias,
+                release_bias=release_recency_bias,
+                tweaked_score=tweaked_output,
+            )
 
             try:
                 aggregated_recommendations[str(app_id)].append(current_data)
@@ -51,8 +54,7 @@ def aggregate_recommendations(recommendations=None,
     return aggregated_recommendations
 
 
-def count_rankings(recommendations=None,
-                   verbose=False):
+def count_rankings(recommendations=None, verbose=False):
     if recommendations is None:
         recommendations = load_recommendations()
 
@@ -62,17 +64,15 @@ def count_rankings(recommendations=None,
     ranking_size = len(recommendations[first_ranking_index]['app_ids'])
 
     if verbose:
-        print('There are {} rankings of {} apps.'.format(num_rankings,
-                                                         ranking_size))
+        print('There are {} rankings of {} apps.'.format(num_rankings, ranking_size))
 
     return num_rankings, ranking_size
 
 
-def count_occurrences(aggregated_recommendations,
-                      verbose=False):
+def count_occurrences(aggregated_recommendations, verbose=False):
     stats = dict()
 
-    for (app_id, occurrences) in aggregated_recommendations.items():
+    for app_id, occurrences in aggregated_recommendations.items():
         num_occurrences = len(occurrences)
 
         try:
@@ -93,8 +93,7 @@ def count_occurrences(aggregated_recommendations,
     return stats
 
 
-def get_total_num_apps(stats,
-                       verbose=False):
+def get_total_num_apps(stats, verbose=False):
     total_num_apps = sum(len(l) for l in stats.values())
 
     if verbose:
@@ -103,8 +102,7 @@ def get_total_num_apps(stats,
     return total_num_apps
 
 
-def get_total_num_occurrences(stats,
-                              verbose=False):
+def get_total_num_occurrences(stats, verbose=False):
     total_num_occurrences = sum(n * len(l) for (n, l) in stats.items())
 
     if verbose:
@@ -113,10 +111,12 @@ def get_total_num_occurrences(stats,
     return total_num_occurrences
 
 
-def summarize_occurrences(aggregated_recommendations,
-                          stats=None,
-                          chosen_num_occurrences=None,
-                          verbose=False):
+def summarize_occurrences(
+    aggregated_recommendations,
+    stats=None,
+    chosen_num_occurrences=None,
+    verbose=False,
+):
     if stats is None:
         stats = count_occurrences(aggregated_recommendations, verbose=verbose)
 
@@ -148,10 +148,18 @@ def summarize_occurrences(aggregated_recommendations,
 
     if verbose:
         print('AppIDs = {}'.format(app_ids))
-        print('popularity bias = {} ; #occurrences = {}'.format(pb_val,
-                                                                pb_occurrences_dict))
-        print('release recency bias = {} ; #occurrences = {}'.format(rb_val,
-                                                                     rb_occurrences_dict))
+        print(
+            'popularity bias = {} ; #occurrences = {}'.format(
+                pb_val,
+                pb_occurrences_dict,
+            ),
+        )
+        print(
+            'release recency bias = {} ; #occurrences = {}'.format(
+                rb_val,
+                rb_occurrences_dict,
+            ),
+        )
 
     return app_ids, pb_occurrences_dict, rb_occurrences_dict
 
@@ -159,13 +167,14 @@ def summarize_occurrences(aggregated_recommendations,
 def main():
     aggregated_recommendations = aggregate_recommendations(verbose=True)
 
-    stats = count_occurrences(aggregated_recommendations,
-                              verbose=True)
+    stats = count_occurrences(aggregated_recommendations, verbose=True)
 
-    app_ids, pb_occurrences_dict, rb_occurrences_dict = summarize_occurrences(aggregated_recommendations,
-                                                                              stats,
-                                                                              chosen_num_occurrences=max(stats.keys()),
-                                                                              verbose=True)
+    app_ids, pb_occurrences_dict, rb_occurrences_dict = summarize_occurrences(
+        aggregated_recommendations,
+        stats,
+        chosen_num_occurrences=max(stats.keys()),
+        verbose=True,
+    )
 
     return
 

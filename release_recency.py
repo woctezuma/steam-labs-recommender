@@ -14,8 +14,7 @@ def get_unix_time_stamp():
     return unix_time_stamp_as_int
 
 
-def convert_str_to_unix_time_stamp(date_as_str,
-                                   date_format='%Y-%m-%d'):
+def convert_str_to_unix_time_stamp(date_as_str, date_format='%Y-%m-%d'):
     # Reference: https://stackoverflow.com/a/30476450
 
     utc_time = datetime.strptime(date_as_str, date_format)
@@ -26,10 +25,7 @@ def convert_str_to_unix_time_stamp(date_as_str,
     return unix_time_stamp_as_int
 
 
-def get_release_recency(app_id,
-                        reference_date=None,
-                        app_info=None,
-                        verbose=False):
+def get_release_recency(app_id, reference_date=None, app_info=None, verbose=False):
     if app_info is None:
         app_info = load_app_info()
 
@@ -47,17 +43,25 @@ def get_release_recency(app_id,
 
     release_date = app_info[str(app_id)]['r']
 
-    release_recency = (reference_time_stamp - release_date)
+    release_recency = reference_time_stamp - release_date
 
     if verbose:
         app_name = app_info[str(app_id)]['n']
-        print('{} ({}): {} seconds between release date and reference date.'.format(app_name, app_id, release_recency))
+        print(
+            '{} ({}): {} seconds between release date and reference date.'.format(
+                app_name,
+                app_id,
+                release_recency,
+            ),
+        )
 
     return release_recency
 
 
 def get_hard_coded_reference_date():
-    hard_coded_reference_date = '2019-08-08'  # Date on which results.json was last downloaded
+    hard_coded_reference_date = (
+        '2019-08-08'  # Date on which results.json was last downloaded
+    )
 
     return hard_coded_reference_date
 
@@ -65,10 +69,12 @@ def get_hard_coded_reference_date():
 def main():
     app_info = load_app_info()
 
-    release_recency = get_release_recency(app_id=49520,  # Borderlands 2
-                                          reference_date=get_hard_coded_reference_date(),
-                                          app_info=app_info,
-                                          verbose=True)
+    release_recency = get_release_recency(
+        app_id=49520,  # Borderlands 2
+        reference_date=get_hard_coded_reference_date(),
+        app_info=app_info,
+        verbose=True,
+    )
 
     return
 
