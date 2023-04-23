@@ -84,13 +84,6 @@ Afterwards, run the following script to download the data:
 python file_utils.py
 ```
 
-### TODO
-
-TODO:
--   average ranking,
--   reverse-engineer the formula,
--   estimate the popularity by cross-referencing data.
-
 ## Trivia
 
 ### Interpolation
